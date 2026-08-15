@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "name": "create-reviewable-ai-video",
   "version": "0.1.0",
-  "artifactState": "local-open-source-candidate",
+  "artifactState": "github-public",
   "publicAssetsIncluded": false,
   "files": [
     {
@@ -119,7 +119,7 @@
     },
     {
       "path": "docs/source-ledger-skill-workflow.md",
-      "sha256": "730fbcb99c8f62bf9e32c6870fecc45fd105ae482c7a3ae48c40d231d66ef40b"
+      "sha256": "2646f5220bd6fc105056eb7f5c8714b9c830d707566f724a6b3c07046b9f32d0"
     },
     {
       "path": "docs/visuals/cover-skill-workflow.png",
@@ -171,7 +171,7 @@
     },
     {
       "path": "docs/文章转视频应该做成Skill还是Workflow.md",
-      "sha256": "d511baef28ca57c38f9191218a1782315ed6cef47017fe47fb6129477cec6a6c"
+      "sha256": "4c5c1d7f9facad84622135a60ec4cc59fc3b461be2785f3395f4421bcfd1f98f"
     },
     {
       "path": "LICENSE",
@@ -183,7 +183,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "6b1a8da2f2b0f542f28ac62014f736427fa7ea86ef980055267d80d6e8cd6593"
+      "sha256": "dbe35776cbf9289344e400682e1c83b1bf1e2a820e68746facd192cb1900bfd2"
     },
     {
       "path": "SECURITY.md",
@@ -191,7 +191,7 @@
     },
     {
       "path": "test/release.test.mjs",
-      "sha256": "547ab0253e1b149a94488789b383ecf2907ad5a48315c909c04af8a9ba0eabc7"
+      "sha256": "f9ad65c769ad683fd22ea17ccb7c1de059f15f9d6dcec7bcdb89c0ce6ce41a7c"
     }
   ]
 }

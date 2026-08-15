@@ -226,4 +226,4 @@ npm run validate:example
 
 ---
 
-本文的来源、版本与不作出的结论见[来源与证据边界](source-ledger-skill-workflow.md)。当前交付状态是本地文章包与本地开源候选；没有观察到 GitHub 发布、公众号导入、预览或正式发布。
+本文的来源、版本与不作出的结论见[来源与证据边界](source-ledger-skill-workflow.md)。本文与 Skill 已随公开 GitHub 仓库发布；没有观察到公众号导入、预览或正式发布。

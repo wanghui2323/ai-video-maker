@@ -101,4 +101,4 @@ pip install -r create-reviewable-ai-video/requirements-voice-mlx.txt
 
 阅读[《做 AI 视频，别把文章当成唯一入口》](docs/文章转视频应该做成Skill还是Workflow.md)。来源与不作出的结论记录在[来源账本](docs/source-ledger-skill-workflow.md)。
 
-当前目录是本地开源候选。测试通过不等于已经发布到 GitHub、npm 或任何内容平台。声音与隐私问题请先读 [SECURITY.md](SECURITY.md)。
+本仓库已公开发布到 GitHub。测试通过与 GitHub 可见不等于已经发布到 npm 或任何内容平台。声音与隐私问题请先读 [SECURITY.md](SECURITY.md)。

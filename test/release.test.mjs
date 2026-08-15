@@ -103,7 +103,7 @@ test('the release contains no bundled voice/model files or known private paths',
 
 test('release manifest hashes match every declared file', async () => {
   const manifest = await readJson(path.join(root, 'release-manifest.json'));
-  assert.equal(manifest.artifactState, 'local-open-source-candidate');
+  assert.equal(manifest.artifactState, 'github-public');
   for (const item of manifest.files) {
     const data = await readFile(path.join(root, item.path));
     assert.equal(createHash('sha256').update(data).digest('hex'), item.sha256, item.path);
