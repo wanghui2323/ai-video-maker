@@ -8,7 +8,7 @@ import test from 'node:test';
 import {fileURLToPath} from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const skill = path.join(root, 'create-reviewable-ai-video');
+const skill = path.join(root, 'make-ai-video');
 const example = path.join(skill, 'assets', 'example-package');
 const validator = path.join(skill, 'scripts', 'validate-package.mjs');
 
@@ -18,7 +18,7 @@ const validate = (directory) => spawnSync(process.execPath, [validator, '--dir',
 });
 
 const cloneExample = async () => {
-  const temporaryRoot = await mkdtemp(path.join(tmpdir(), 'reviewable-video-release-test-'));
+  const temporaryRoot = await mkdtemp(path.join(tmpdir(), 'ai-video-maker-release-test-'));
   const target = path.join(temporaryRoot, 'package');
   await cp(example, target, {recursive: true});
   return target;

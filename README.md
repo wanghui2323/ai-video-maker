@@ -1,6 +1,8 @@
-# create-reviewable-ai-video
+# AI 视频制作助手
 
-把一个想法、文章、提纲、已有口播、资料包或音频，整理成有来源、可审核、可恢复的 AI 视频生产包。文章转视频只是输入路径之一。
+> 从一个想法，到一条由你确认的视频。
+
+`ai-video-maker` 是一个中文开源 Skill + Workflow。输入一个想法、文章、提纲、已有口播、资料包或音频，它会协助完成内容决策、脚本、声音、画面和人工审核。文章转视频只是输入路径之一。
 
 Skill 负责识别输入、补全缺口、比较候选、决定时长与画幅；内置 Workflow 合同负责状态顺序、声音隐私、正式时序、产物和人工审核门禁。
 
@@ -33,7 +35,7 @@ VideoBrief → ContentDecision → VideoContentPlan → 口播确认
 
 ## 公开仓库包含什么
 
-- `create-reviewable-ai-video/SKILL.md`：中文 Agent 操作入口；
+- `make-ai-video/SKILL.md`：中文 Agent 操作入口；
 - `assets/example-package/`：以“一个想法”为入口的可运行示例；
 - `scripts/validate-package.mjs`：零依赖生产合同校验器；
 - 本地声音克隆 Provider、Profile/Run CLI、机器 QA 与禁用模板；
@@ -64,7 +66,7 @@ durationMs=72000 release=local_package
 
 ```bash
 mkdir -p ~/.codex/skills
-cp -R create-reviewable-ai-video ~/.codex/skills/
+cp -R make-ai-video ~/.codex/skills/
 ```
 
 重新启动或刷新 Agent 后，可以直接说：
@@ -77,13 +79,13 @@ cp -R create-reviewable-ai-video ~/.codex/skills/
 ## 在项目中使用
 
 ```bash
-cp -R create-reviewable-ai-video/assets/example-package my-video-package
-node create-reviewable-ai-video/scripts/validate-package.mjs --dir my-video-package
+cp -R make-ai-video/assets/example-package my-video-package
+node make-ai-video/scripts/validate-package.mjs --dir my-video-package
 ```
 
 依次维护：`video-brief.json`、`content-decision.json`、`video-content-plan.json`、`video-unit.json` 和 `workflow-state.json`。
 
-输入路由见 [`input-routing.md`](create-reviewable-ai-video/references/input-routing.md)，对象合同见 [`content-contract.md`](create-reviewable-ai-video/references/content-contract.md)，生产门禁见 [`production-gates.md`](create-reviewable-ai-video/references/production-gates.md)。
+输入路由见 [`input-routing.md`](make-ai-video/references/input-routing.md)，对象合同见 [`content-contract.md`](make-ai-video/references/content-contract.md)，生产门禁见 [`production-gates.md`](make-ai-video/references/production-gates.md)。
 
 ## 可选：本地声音克隆
 
@@ -92,10 +94,10 @@ node create-reviewable-ai-video/scripts/validate-package.mjs --dir my-video-pack
 ```bash
 python3 -m venv .venv-voice
 source .venv-voice/bin/activate
-pip install -r create-reviewable-ai-video/requirements-voice-mlx.txt
+pip install -r make-ai-video/requirements-voice-mlx.txt
 ```
 
-完整流程见 [`voice-cloning.md`](create-reviewable-ai-video/references/voice-cloning.md)。机器只能淘汰坏音频，不能代替声音所有者判断“像不像本人”“是否自然”，也不能批准公开发布。
+完整流程见 [`voice-cloning.md`](make-ai-video/references/voice-cloning.md)。机器只能淘汰坏音频，不能代替声音所有者判断“像不像本人”“是否自然”，也不能批准公开发布。
 
 ## 架构文章与状态
 

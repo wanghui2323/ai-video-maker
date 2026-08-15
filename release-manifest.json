@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "name": "create-reviewable-ai-video",
+  "name": "ai-video-maker",
   "version": "0.1.0",
   "artifactState": "github-public",
   "publicAssetsIncluded": false,
@@ -10,116 +10,116 @@
       "sha256": "2de9fa92b0d1ccf5b63226f30194c2873e3ec7633818b31c5ede0ce33ef0aca3"
     },
     {
-      "path": "create-reviewable-ai-video/agents/openai.yaml",
-      "sha256": "7bea7b14ffce7262e56a8b6780f43f131605e603efef2d6cb7fc42a82ea8f57f"
+      "path": "make-ai-video/agents/openai.yaml",
+      "sha256": "f5beec6ac3dd6fc2d948240767686a7c49e18a5369d792834d85d5333e81cb3b"
     },
     {
-      "path": "create-reviewable-ai-video/assets/example-package/captions.json",
+      "path": "make-ai-video/assets/example-package/captions.json",
       "sha256": "ff1affac01b2f86a075a1729bd0f6f00f6065daee164ee941b38bd898dd8a028"
     },
     {
-      "path": "create-reviewable-ai-video/assets/example-package/content-decision.json",
+      "path": "make-ai-video/assets/example-package/content-decision.json",
       "sha256": "fe6c181149cd575f33bd774d7c8a34a5537648de7bd56406717d6b7b0e8869cb"
     },
     {
-      "path": "create-reviewable-ai-video/assets/example-package/narration-and-rhythm.md",
+      "path": "make-ai-video/assets/example-package/narration-and-rhythm.md",
       "sha256": "5b22b560406323e8ae754f0ecceffd7010e75082e4e0f70a145d1b59e92bf601"
     },
     {
-      "path": "create-reviewable-ai-video/assets/example-package/source-notes.md",
+      "path": "make-ai-video/assets/example-package/source-notes.md",
       "sha256": "856a169e2bd81bc94bae3a3056c6d14e531172b982ceaeb0fdbc206511a8d2c0"
     },
     {
-      "path": "create-reviewable-ai-video/assets/example-package/video-brief.json",
+      "path": "make-ai-video/assets/example-package/video-brief.json",
       "sha256": "fc87c0b3992d0cc2a5dc758476bb4b4d8956c96cd033bbaf0fca7c1c5e1fa2a7"
     },
     {
-      "path": "create-reviewable-ai-video/assets/example-package/video-content-plan.json",
+      "path": "make-ai-video/assets/example-package/video-content-plan.json",
       "sha256": "3d4242abac45c558507c7b1670ebba2ac68a82ed36202f27178ddba9aa420da7"
     },
     {
-      "path": "create-reviewable-ai-video/assets/example-package/video-unit.json",
+      "path": "make-ai-video/assets/example-package/video-unit.json",
       "sha256": "0ed5e34dd2d661695c4aa80a97f436d38416f84c36a6d1506a95a43bb1bbfa2c"
     },
     {
-      "path": "create-reviewable-ai-video/assets/example-package/workflow-state.json",
+      "path": "make-ai-video/assets/example-package/workflow-state.json",
       "sha256": "405c294995e795d60ceb48a9bbb4a90456a6047f397f3bb7e7fbec4d2d4375a4"
     },
     {
-      "path": "create-reviewable-ai-video/assets/voice-clone-starter/gitignore.snippet",
+      "path": "make-ai-video/assets/voice-clone-starter/gitignore.snippet",
       "sha256": "981bc6a5d9db2447f5e95651eb6906ecaf76d8c5a981eafde1d11267750201ec"
     },
     {
-      "path": "create-reviewable-ai-video/assets/voice-clone-starter/narration.txt",
+      "path": "make-ai-video/assets/voice-clone-starter/narration.txt",
       "sha256": "a69962458fa0e44da62f4c72bdebd8a6bfb3d530a06e11d131da45e51a532e41"
     },
     {
-      "path": "create-reviewable-ai-video/assets/voice-clone-starter/reference-transcript.txt",
+      "path": "make-ai-video/assets/voice-clone-starter/reference-transcript.txt",
       "sha256": "29fd3d147a26bae773b9c3c6f5289af7f163c984e750441282bad7a5f9a68295"
     },
     {
-      "path": "create-reviewable-ai-video/assets/voice-clone-starter/voice-consent.json",
+      "path": "make-ai-video/assets/voice-clone-starter/voice-consent.json",
       "sha256": "e86667509047768989ddabf697b295efb32193de95b63d1e0677ba3549ac65cb"
     },
     {
-      "path": "create-reviewable-ai-video/assets/voice-clone-starter/voice-provider.json",
+      "path": "make-ai-video/assets/voice-clone-starter/voice-provider.json",
       "sha256": "15f3d0c70b634a7a690c145f563b5b9e159acfd20fb197bfe9241850f0f02d19"
     },
     {
-      "path": "create-reviewable-ai-video/references/content-contract.md",
+      "path": "make-ai-video/references/content-contract.md",
       "sha256": "792c9144e17db85d4c19a701d8e9f05b585e42561bbd8431cf6ffc2660110431"
     },
     {
-      "path": "create-reviewable-ai-video/references/input-routing.md",
+      "path": "make-ai-video/references/input-routing.md",
       "sha256": "7de390dd2c24c1cfcbe3bc71dd6b4a1431e5cad5497a3e4fd0010f4b10356c57"
     },
     {
-      "path": "create-reviewable-ai-video/references/production-gates.md",
+      "path": "make-ai-video/references/production-gates.md",
       "sha256": "c4d457513eb9cc0247c7eede773728f5e96d887ada258c129165bcfb2a4c8918"
     },
     {
-      "path": "create-reviewable-ai-video/references/visual-routing.md",
+      "path": "make-ai-video/references/visual-routing.md",
       "sha256": "dcf879ca03965e57d8e02f57d6c7f66ed4ae32316ae92f7fd596ef36f62d6913"
     },
     {
-      "path": "create-reviewable-ai-video/references/voice-cloning.md",
+      "path": "make-ai-video/references/voice-cloning.md",
       "sha256": "07559c1b40036b464d8486753b8b83850034d57a46cd39b5445cc6851305a2bb"
     },
     {
-      "path": "create-reviewable-ai-video/requirements-voice-mlx.txt",
+      "path": "make-ai-video/requirements-voice-mlx.txt",
       "sha256": "e5f03e3ccb41a807f998282b299fb12a99b9005c8d3e3e0265afcde9bda64235"
     },
     {
-      "path": "create-reviewable-ai-video/scripts/providers/qwen3-tts-mlx.py",
+      "path": "make-ai-video/scripts/providers/qwen3-tts-mlx.py",
       "sha256": "6478f1d8ee6c1018dad3371a1efb7bdbbd161e8147fc11096731ba5885893698"
     },
     {
-      "path": "create-reviewable-ai-video/scripts/qa-voice-run.py",
+      "path": "make-ai-video/scripts/qa-voice-run.py",
       "sha256": "ac185df5320d2a170041f4c84ae20d4b1067eccdba61ebdbf0e7a0aed5644a5b"
     },
     {
-      "path": "create-reviewable-ai-video/scripts/validate-package.mjs",
+      "path": "make-ai-video/scripts/validate-package.mjs",
       "sha256": "520ea8b0765a0ffcfa274c802019855d84bf6d429ac64cdc6c798387d44a197b"
     },
     {
-      "path": "create-reviewable-ai-video/scripts/voice-common.mjs",
+      "path": "make-ai-video/scripts/voice-common.mjs",
       "sha256": "4cbaaca31ab2003289a525b6eab5f8255743ef71ae011e176f8be393d96fcc88"
     },
     {
-      "path": "create-reviewable-ai-video/scripts/voice-profile.mjs",
+      "path": "make-ai-video/scripts/voice-profile.mjs",
       "sha256": "ad4cab54621f251c4333ca29cee619ef80316c5a4904694502728b4abc4a1e75"
     },
     {
-      "path": "create-reviewable-ai-video/scripts/voice-run.mjs",
+      "path": "make-ai-video/scripts/voice-run.mjs",
       "sha256": "a7a22c33d28361448bba338cb08145e2831d7a6a5a78d32d00ad342825d635b8"
     },
     {
-      "path": "create-reviewable-ai-video/SKILL.md",
-      "sha256": "ccc80c3a5b94b53aa47a3d963cb742d408986f35cb4f0b90350bed8fdb3695ed"
+      "path": "make-ai-video/SKILL.md",
+      "sha256": "3ceeb2c24b49545ae01452eb0f4560e1fa05ef6f9d1d8ffb21e8f985a6646f40"
     },
     {
       "path": "docs/source-ledger-skill-workflow.md",
-      "sha256": "2646f5220bd6fc105056eb7f5c8714b9c830d707566f724a6b3c07046b9f32d0"
+      "sha256": "b71dbeadfc2fede42f1317acca528c37731912f36e24cb5b3c2f0c75ce9d02b9"
     },
     {
       "path": "docs/visuals/cover-skill-workflow.png",
@@ -171,7 +171,7 @@
     },
     {
       "path": "docs/文章转视频应该做成Skill还是Workflow.md",
-      "sha256": "4c5c1d7f9facad84622135a60ec4cc59fc3b461be2785f3395f4421bcfd1f98f"
+      "sha256": "09de696fb9ebeaaf6129c7ef88e97610dcdaf9cdc2e373c2b079c59fddaee8c3"
     },
     {
       "path": "LICENSE",
@@ -179,11 +179,11 @@
     },
     {
       "path": "package.json",
-      "sha256": "a42b3311e391704578c957df066ab8d702604645d6fd509f364efb714438cea7"
+      "sha256": "9f131b17b80c7407da912a0ca13141ad32e176c5a3309380faaf033aaa7c0e4c"
     },
     {
       "path": "README.md",
-      "sha256": "dbe35776cbf9289344e400682e1c83b1bf1e2a820e68746facd192cb1900bfd2"
+      "sha256": "2c9806a895cbe8fd3daae0abe8fbd9e83d3285b3b3b5a81d5b058f54232950ea"
     },
     {
       "path": "SECURITY.md",
@@ -191,7 +191,7 @@
     },
     {
       "path": "test/release.test.mjs",
-      "sha256": "f9ad65c769ad683fd22ea17ccb7c1de059f15f9d6dcec7bcdb89c0ce6ce41a7c"
+      "sha256": "76585a9c6b00c46a0004093d8100cdd3e1643848610ca8219ba68bb7323f2ae5"
     }
   ]
 }

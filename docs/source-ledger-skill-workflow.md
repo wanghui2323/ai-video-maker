@@ -3,8 +3,8 @@
 ## 当前版本
 
 - 文章：`文章转视频应该做成Skill还是Workflow.md`
-- 开源 Skill：`create-reviewable-ai-video/`
-- 独立发布候选：`open-source/create-reviewable-ai-video/`
+- 开源 Skill：`make-ai-video/`
+- 独立发布仓库：`open-source/ai-video-maker/`
 - 本地验证日期：2026-08-15
 
 ## 一手来源
@@ -19,10 +19,10 @@
 
 ## 项目证据
 
-- `create-reviewable-ai-video/assets/example-package/`：从想法开始的五对象公开示例。
-- `create-reviewable-ai-video/scripts/validate-package.mjs`：输入路由、状态顺序、时间轴、字幕来源、声音授权、私有路径和哈希绑定校验。
-- `create-reviewable-ai-video/scripts/voice-profile.mjs`：首次声音建档时，锁定授权、Provider、TTS/ASR 模型、参考音频和运行时版本。
-- `create-reviewable-ai-video/scripts/voice-run.mjs`：每条视频的章级多候选、机检状态与声音所有者选择。
+- `make-ai-video/assets/example-package/`：从想法开始的五对象公开示例。
+- `make-ai-video/scripts/validate-package.mjs`：输入路由、状态顺序、时间轴、字幕来源、声音授权、私有路径和哈希绑定校验。
+- `make-ai-video/scripts/voice-profile.mjs`：首次声音建档时，锁定授权、Provider、TTS/ASR 模型、参考音频和运行时版本。
+- `make-ai-video/scripts/voice-run.mjs`：每条视频的章级多候选、机检状态与声音所有者选择。
 - `test/release.test.mjs`：公开 Skill 生命周期与失败门禁测试。
 
 ## 教学策略，不是行业统计
@@ -39,4 +39,4 @@
 - 本地模型、参考录音或生成 WAV 存在，不等于声音可以公开使用。
 - 声音档案达到 `ready`，不等于任意文本可以自动生成和发布。
 - 本地包、渲染文件、平台草稿、完整预览、定时发布和正式上线是不同状态。
-- 截至 2026-08-15，公开仓库 `wanghui2323/create-reviewable-ai-video`、默认分支 `main`、README 与 MIT License 已在线核验；没有观察到公众号导入、预览或正式发布。
+- 截至 2026-08-15，公开仓库 `wanghui2323/ai-video-maker`、默认分支 `main`、README 与 MIT License 已在线核验；没有观察到公众号导入、预览或正式发布。

@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI 视频制作助手"
+  short_description: "从想法、文章或音频到脚本、声音、画面和人工审核的完整流程"
+  default_prompt: "使用 $make-ai-video 把这个想法或素材制作成一条由我确认的视频。"
