@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1062" height="1320" viewBox="0 0 1062 1320">
+  <rect width="1062" height="1320" fill="#07111F"/>
+  <style>text{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Noto Sans CJK SC','Microsoft YaHei',sans-serif}</style>
+  <text x="64" y="82" fill="#F7FAFC" font-size="52" font-weight="800" text-anchor="start" opacity="1">两个时钟，解决“声音到底先不先做”</text>
+  <text x="64" y="132" fill="#A8B6C8" font-size="28" font-weight="500" text-anchor="start" opacity="1">先准备可复用能力；正式资产等待本轮内容批准</text>
+  
+    <rect x="64" y="184" width="300" height="54" rx="27" fill="#FF9A52"/>
+<text x="214" y="223" fill="#07111F" font-size="32" font-weight="800" text-anchor="middle" opacity="1">时钟 A｜首次声音建档</text>
+    <rect x="64" y="260" width="934" height="310" rx="28" fill="#101E30" stroke="#FF9A52" stroke-width="2"/>
+    <text x="98" y="326" fill="#A8B6C8" font-size="40" font-weight="500" text-anchor="start" opacity="1">授权与私有范围</text>
+<text x="98" y="384" fill="#A8B6C8" font-size="40" font-weight="500" text-anchor="start" opacity="1">参考音频 + 准确逐字稿</text>
+<text x="98" y="442" fill="#A8B6C8" font-size="40" font-weight="500" text-anchor="start" opacity="1">3 个短校准候选</text>
+<text x="98" y="500" fill="#A8B6C8" font-size="40" font-weight="500" text-anchor="start" opacity="1">机器淘汰 + 本人选档</text>
+    <rect x="688" y="474" width="260" height="54" rx="27" fill="#58D68D"/>
+<text x="818" y="513" fill="#07111F" font-size="32" font-weight="800" text-anchor="middle" opacity="1">声音档案 ready</text>
+    <line x1="531" y1="586" x2="531" y2="666" stroke="#58D68D" stroke-width="5" stroke-linecap="round"/>
+<path d="M 519 656 L 531 674 L 543 656" fill="none" stroke="#58D68D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="64" y="654" width="320" height="54" rx="27" fill="#53D4E8"/>
+<text x="224" y="693" fill="#07111F" font-size="32" font-weight="800" text-anchor="middle" opacity="1">时钟 B｜每条视频生产</text>
+    <rect x="64" y="730" width="934" height="510" rx="28" fill="#101E30" stroke="#53D4E8" stroke-width="2"/>
+    <text x="98" y="802" fill="#53D4E8" font-size="38" font-weight="800" text-anchor="start" opacity="1">多种入口</text>
+    <text x="322" y="802" fill="#F7FAFC" font-size="32" font-weight="650" text-anchor="start" opacity="1">想法 · 文章 · 大纲 · 脚本 · 资料 · 音频</text>
+    <text x="98" y="884" fill="#A8B6C8" font-size="40" font-weight="500" text-anchor="start" opacity="1">VideoBrief → 方向选择</text>
+<text x="98" y="952" fill="#A8B6C8" font-size="40" font-weight="500" text-anchor="start" opacity="1">内容计划 → 口播人工确认</text>
+<text x="98" y="1020" fill="#A8B6C8" font-size="40" font-weight="500" text-anchor="start" opacity="1">本轮 VoiceRun → 本人选择</text>
+<text x="98" y="1088" fill="#A8B6C8" font-size="40" font-weight="500" text-anchor="start" opacity="1">真实时序 → 视觉 → 渲染 → 整片审核</text>
+    <rect x="640" y="1136" width="308" height="54" rx="27" fill="#53D4E8"/>
+<text x="794" y="1175" fill="#07111F" font-size="32" font-weight="800" text-anchor="middle" opacity="1">正式旁白从这里生成</text>
+  
+</svg>

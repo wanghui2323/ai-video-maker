@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "voiceOwner": {
+    "type": "self",
+    "displayName": null
+  },
+  "authorized": false,
+  "authorizedAt": null,
+  "purposes": [
+    "local-video-narration"
+  ],
+  "localOnly": true,
+  "remoteUploadAuthorized": false,
+  "evidencePath": "private/consent-evidence.txt",
+  "retention": "Keep reference and generated audio in the local private directory; do not commit or deploy it.",
+  "note": "This disabled template is not consent. Complete it truthfully before profile initialization."
+}

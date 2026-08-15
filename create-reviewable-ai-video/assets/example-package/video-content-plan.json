@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "id": "two-clock-video-production-standard",
+  "sourceDecision": "content-decision.json",
+  "selectedUnitId": "two-clock-video-production",
+  "primaryQuestion": "首次使用和每次生产，声音步骤应该怎样安排？",
+  "coreJudgment": "首次先建立可复用声音档案；每次生产仍要等口播确认后再生成并选择本次正式配音。",
+  "viewerAction": "把声音建档当作低频准备，把本次配音当作项目内门禁。",
+  "durationLane": "standard",
+  "durationMs": 72000,
+  "formatProfile": "landscape-knowledge",
+  "openingContract": {
+    "visibleConflict": "每条视频都重新克隆声音，或者还没定稿就先生成正式配音",
+    "withheldAnswer": "声音建立和本次配音其实属于两条生命周期",
+    "payoff": "得到一套首次建档、每次复用的双时钟节奏"
+  },
+  "segments": [
+    {
+      "id": "hook",
+      "role": "hook",
+      "startMs": 0,
+      "endMs": 7000,
+      "narration": "先克隆声音，再开始做视频，这个方向只对了一半。真正的问题，是我们把两种声音任务混在了一起。",
+      "purpose": "建立先后顺序的冲突",
+      "emotion": "克制、直接",
+      "sourceAnchors": ["source-notes.md：声音克隆不应每次从头开始"],
+      "visual": {"visualJob":"conflict","layout":"branch","camera":"compare","headline":"声音应该先做，还是后做？","supportingText":"答案取决于：建档，还是本次配音","objects":["声音建档","本次配音","混在一起"]}
+    },
+    {
+      "id": "misconception",
+      "role": "misconception",
+      "startMs": 7000,
+      "endMs": 17000,
+      "narration": "如果每条视频都重新授权、选参考、做校准，成本太高；如果口播还没确认就生成正式音频，后面每次改稿又要整段重做。",
+      "purpose": "解释单线流程为什么反复返工",
+      "emotion": "清晰解释",
+      "sourceAnchors": ["source-notes.md：低频声音能力与项目生产应拆开"],
+      "visual": {"visualJob":"mechanism","layout":"columns","camera":"compare","headline":"单线流程，两头返工","supportingText":"重复校准｜提前生成正式配音","objects":["重复建档","口播变更","音频重做"]}
+    },
+    {
+      "id": "setup-clock",
+      "role": "reframe",
+      "startMs": 17000,
+      "endMs": 29000,
+      "narration": "第一次使用时，应该先完成授权、参考录音、三个校准候选、机器检查和本人选择，形成一个可复用、可追踪的声音档案。",
+      "purpose": "定义低频声音建档时钟",
+      "emotion": "逐步推进",
+      "sourceAnchors": ["source-notes.md：首次形成可复用声音档案"],
+      "visual": {"visualJob":"mechanism","layout":"flow","camera":"overview","headline":"时钟一：首次建立声音能力","supportingText":"授权 → 校准 → 三候选 → 本人选择","objects":["授权","校准","三候选","声音档案"]}
+    },
+    {
+      "id": "production-entry",
+      "role": "mechanism",
+      "startMs": 29000,
+      "endMs": 43000,
+      "narration": "每条视频再走另一条时钟。入口可以是一篇文章，也可以是一个想法、提纲、已有口播、资料包或音频。先统一成 VideoBrief，再选择本轮只讲哪一个问题。",
+      "purpose": "把文章降为输入路由并建立通用 Brief",
+      "emotion": "专业、展开",
+      "sourceAnchors": ["source-notes.md：多种输入进入同一个生产流程"],
+      "visual": {"visualJob":"mechanism","layout":"flow","camera":"overview","headline":"时钟二：每条视频自己的生产","supportingText":"多种输入 → VideoBrief → 内容选择","objects":["想法/文章","VideoBrief","内容方向"]}
+    },
+    {
+      "id": "narration-voice-run",
+      "role": "mechanism",
+      "startMs": 43000,
+      "endMs": 57000,
+      "narration": "内容和口播确认后，再预检声音档案，生成本次三个完整候选。机器负责淘汰坏音频，本人负责选择像不像、自然不自然。",
+      "purpose": "说明正式配音仍在每次生产内部",
+      "emotion": "专业、收紧",
+      "sourceAnchors": ["source-notes.md：本次候选仍需本人选择"],
+      "visual": {"visualJob":"evidence","layout":"flow","camera":"focus","headline":"口播确认后，才生成本次正式配音","supportingText":"Profile 预检 → 三候选 → QA → 本人选择","objects":["口播已审","Profile","三候选","选择"]}
+    },
+    {
+      "id": "video-gates",
+      "role": "action",
+      "startMs": 57000,
+      "endMs": 68000,
+      "narration": "选定声音以后，真实字幕决定正式时序，再做视觉预检、渲染和整片人工审核。任何一步失败，只回到对应阶段。",
+      "purpose": "给出后半段生产与恢复节奏",
+      "emotion": "明确、有执行感",
+      "sourceAnchors": ["source-notes.md：内容、配音、时序、画面、渲染和审核"],
+      "visual": {"visualJob":"action","layout":"flow","camera":"overview","headline":"声音之后，才进入正式时序和画面","supportingText":"转写 → 视觉预检 → 渲染 → 人工审核","objects":["正式时序","视觉预检","渲染","审核"]}
+    },
+    {
+      "id": "conclusion",
+      "role": "conclusion",
+      "startMs": 68000,
+      "endMs": 72000,
+      "narration": "声音档案先建立一次，视频内容和正式配音按项目逐次完成。",
+      "purpose": "收束双时钟节奏",
+      "emotion": "笃定、留停顿",
+      "sourceAnchors": ["source-notes.md：需要两条节奏"],
+      "visual": {"visualJob":"conclusion","layout":"statement","camera":"overview","headline":"建档一次，生产逐次","supportingText":"可复用声音能力 + 可审核视频生产","objects":["双时钟视频生产"]}
+    }
+  ]
+}

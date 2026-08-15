@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "two-clock-content-decision",
+  "briefId": "two-clock-video-brief",
+  "inputMode": "idea",
+  "coreIntent": "解释通用视频 Skill 为什么需要把声音能力建立与每次视频生产拆成两条节奏。",
+  "candidateUnits": [
+    {
+      "id": "two-clock-video-production",
+      "workingTitle": "先克隆声音，还是先做本次视频？",
+      "primaryQuestion": "首次使用和每次生产，声音步骤应该怎样安排？",
+      "coreJudgment": "首次先建立可复用声音档案；每次生产仍要等口播确认后再生成并选择本次正式配音。",
+      "viewerAction": "把声音建档当作低频准备，把本次配音当作项目内门禁。",
+      "suggestedLane": "standard",
+      "formatProfile": "landscape-knowledge",
+      "sourceAnchors": [
+        "source-notes.md：声音克隆不应在每条视频中从头开始",
+        "source-notes.md：需要两条节奏"
+      ],
+      "verificationNeeds": [],
+      "scores": {
+        "standalone": 5,
+        "evidence": 4,
+        "decisionValue": 5,
+        "visualPotential": 5
+      },
+      "status": "recommended"
+    },
+    {
+      "id": "multiple-input-routes",
+      "workingTitle": "为什么文章不该是视频 Skill 的唯一入口？",
+      "primaryQuestion": "一个通用视频 Skill 应该接受哪些输入？",
+      "coreJudgment": "文章、想法、提纲、口播、资料包和音频应进入同一个 Brief，再按成熟度路由。",
+      "viewerAction": "先判断输入类型与缺口，再决定补充内容还是进入制作。",
+      "suggestedLane": "quick",
+      "formatProfile": "vertical-presence",
+      "sourceAnchors": [
+        "source-notes.md：用户可能输入多种材料",
+        "source-notes.md：文章转视频只是内容入口之一"
+      ],
+      "verificationNeeds": [],
+      "scores": {
+        "standalone": 5,
+        "evidence": 4,
+        "decisionValue": 5,
+        "visualPotential": 4
+      },
+      "status": "reserve"
+    }
+  ],
+  "decisionRationale": "推荐项直接解决首次声纹准备与每次正式配音混在一起造成的节奏问题。"
+}

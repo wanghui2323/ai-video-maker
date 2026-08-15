@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "qwen3-tts-mlx-local",
+  "kind": "qwen3-tts-mlx",
+  "confirmed": false,
+  "localOnly": true,
+  "allowNetwork": false,
+  "remoteUploadAuthorized": false,
+  "modelId": "mlx-community/Qwen3-TTS-12Hz-0.6B-Base-bf16",
+  "modelPath": "models/Qwen3-TTS-12Hz-0.6B-Base-bf16",
+  "modelLicense": "Apache-2.0; review the upstream model card before use",
+  "modelSource": "https://huggingface.co/mlx-community/Qwen3-TTS-12Hz-0.6B-Base-bf16",
+  "runtime": {
+    "python": "3.12",
+    "mlxAudio": "0.4.8",
+    "mlxWhisper": "0.4.3",
+    "numpy": "2.4.6"
+  },
+  "fingerprintFiles": [
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "speech_tokenizer/model.safetensors"
+  ],
+  "generation": {
+    "language": "Chinese",
+    "takeCount": 3,
+    "temperature": 0.85,
+    "topP": 0.95,
+    "topK": 50,
+    "repetitionPenalty": 1.1,
+    "maxTokens": 512,
+    "singleTakePerChapter": true,
+    "noCrossSentenceStitch": true,
+    "timeStretch": false
+  },
+  "postProcess": {
+    "targetActiveRmsDbfs": -22,
+    "peakCeilingDbfs": -1,
+    "edgeFadeMs": 8,
+    "leadingSilenceMs": 160,
+    "trailingSilenceMs": 260,
+    "timeStretch": false
+  },
+  "qaPolicy": {
+    "asrModelId": "mlx-community/whisper-small-mlx",
+    "asrModelLicense": "MIT; review the upstream model card and source repository before use",
+    "asrModelSource": "https://huggingface.co/mlx-community/whisper-small-mlx",
+    "asrModelPath": "models/whisper-small-mlx",
+    "asrFingerprintFiles": [
+      "config.json",
+      "weights.npz"
+    ],
+    "language": "zh",
+    "initialPrompt": "AI, Agent, Skill, Workflow, Tool, MCP.",
+    "promptedSimilarityMin": 0.9,
+    "noPromptSimilarityMin": 0.82,
+    "criticalTermsCoverage": 1,
+    "clippingPercentMax": 0,
+    "activeRmsDbfs": {
+      "min": -26,
+      "max": -18
+    },
+    "peakDbfsMax": -0.95,
+    "humanIdentityReviewRequired": true,
+    "humanNaturalnessReviewRequired": true
+  }
+}

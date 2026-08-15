@@ -1,0 +1,5 @@
+# Known local baseline for the optional Apple Silicon voice provider.
+# Model and ASR weights are intentionally not installed or downloaded by this file.
+mlx-audio==0.4.8
+mlx-whisper==0.4.3
+numpy==2.4.6

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "two-clock-video-production-standard",
+  "releaseState": "local_package",
+  "dependencies": {
+    "voiceProfile": {"mode":"none","status":"not_applicable","preflight":"not_applicable","profilePath":null}
+  },
+  "stages": {
+    "brief_ready": "passed",
+    "direction_selected": "passed",
+    "content_plan_reviewed": "passed",
+    "narration_reviewed": "pending",
+    "voice_run_selected": "not_applicable",
+    "timing_ready": "pending",
+    "visual_previewed": "pending",
+    "rendered": "pending",
+    "human_reviewed": "pending",
+    "approved": "pending"
+  },
+  "artifacts": {
+    "source":"source-notes.md","brief":"video-brief.json","contentDecision":"content-decision.json","contentPlan":"video-content-plan.json","narrationReview":"narration-and-rhythm.md","videoUnit":"video-unit.json","captions":"captions.json","finalVideo":null
+  },
+  "review": {"facts":"pending","narration":"pending","voice":"not_applicable","visuals":"pending","rights":"pending","aiDisclosure":"pending"},
+  "platforms": {}
+}

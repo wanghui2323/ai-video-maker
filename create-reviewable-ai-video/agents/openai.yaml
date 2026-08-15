@@ -1,0 +1,4 @@
+interface:
+  display_name: "可审核 AI 视频制作"
+  short_description: "从想法或素材到配音、画面和发布门禁"
+  default_prompt: "使用 $create-reviewable-ai-video 把这个想法或素材整理成可审核、可恢复的视频生产包。"

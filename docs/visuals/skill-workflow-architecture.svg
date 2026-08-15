@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1062" height="1120" viewBox="0 0 1062 1120">
+  <rect width="1062" height="1120" fill="#07111F"/>
+  <style>text{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Noto Sans CJK SC','Microsoft YaHei',sans-serif}</style>
+  <text x="64" y="82" fill="#F7FAFC" font-size="52" font-weight="800" text-anchor="start" opacity="1">Skill 做判断，Workflow 做交付</text>
+  <text x="64" y="132" fill="#A8B6C8" font-size="28" font-weight="500" text-anchor="start" opacity="1">先冻结内容选择，再启动不能漂移的生产合同</text>
+  
+    <rect x="64" y="184" width="934" height="250" rx="28" fill="#101E30" stroke="#FF9A52" stroke-width="2"/>
+    <rect x="96" y="216" width="230" height="54" rx="27" fill="#FF9A52"/>
+<text x="211" y="255" fill="#07111F" font-size="32" font-weight="800" text-anchor="middle" opacity="1">Skill｜判断层</text>
+    <text x="96" y="314" fill="#F7FAFC" font-size="42" font-weight="750" text-anchor="start" opacity="1">随输入和受众改变的选择</text>
+    <text x="96" y="372" fill="#A8B6C8" font-size="34" font-weight="500" text-anchor="start" opacity="1">识别输入阶段  ·  选择一个独立问题</text>
+<text x="96" y="418" fill="#A8B6C8" font-size="34" font-weight="500" text-anchor="start" opacity="1">保留证据  ·  选择时长与画幅</text>
+    <line x1="531" y1="446" x2="531" y2="494" stroke="#FF9A52" stroke-width="5" stroke-linecap="round"/>
+<path d="M 519 484 L 531 502 L 543 484" fill="none" stroke="#FF9A52" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="386" y="466" width="290" height="54" rx="27" fill="#FF9A52"/>
+<text x="531" y="505" fill="#07111F" font-size="32" font-weight="800" text-anchor="middle" opacity="1">冻结内容合同</text>
+    <rect x="64" y="522" width="934" height="250" rx="28" fill="#101E30" stroke="#53D4E8" stroke-width="2"/>
+    <rect x="96" y="554" width="310" height="54" rx="27" fill="#53D4E8"/>
+<text x="251" y="593" fill="#07111F" font-size="32" font-weight="800" text-anchor="middle" opacity="1">Workflow｜执行层</text>
+    <text x="96" y="652" fill="#F7FAFC" font-size="42" font-weight="750" text-anchor="start" opacity="1">每次运行都必须一致的责任</text>
+    <text x="96" y="710" fill="#A8B6C8" font-size="34" font-weight="500" text-anchor="start" opacity="1">校验时间轴、授权、哈希和文件</text>
+<text x="96" y="756" fill="#A8B6C8" font-size="34" font-weight="500" text-anchor="start" opacity="1">记录状态、失败证据与恢复位置</text>
+    <line x1="531" y1="784" x2="531" y2="832" stroke="#53D4E8" stroke-width="5" stroke-linecap="round"/>
+<path d="M 519 822 L 531 840 L 543 822" fill="none" stroke="#53D4E8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="64" y="860" width="934" height="188" rx="28" fill="#101E30" stroke="#58D68D" stroke-width="2"/>
+    <rect x="96" y="892" width="260" height="54" rx="27" fill="#58D68D"/>
+<text x="226" y="931" fill="#07111F" font-size="32" font-weight="800" text-anchor="middle" opacity="1">Human｜责任门</text>
+    <text x="96" y="982" fill="#F7FAFC" font-size="39" font-weight="700" text-anchor="start" opacity="1">事实、身份、自然度与发布由人明确放行</text>
+  
+</svg>

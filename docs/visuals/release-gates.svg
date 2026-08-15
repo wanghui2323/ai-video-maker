@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1062" height="1370" viewBox="0 0 1062 1370">
+  <rect width="1062" height="1370" fill="#07111F"/>
+  <style>text{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Noto Sans CJK SC','Microsoft YaHei',sans-serif}</style>
+  <text x="64" y="82" fill="#F7FAFC" font-size="52" font-weight="800" text-anchor="start" opacity="1">“生成了”到“可发布”之间有五道证据门</text>
+  <text x="64" y="132" fill="#A8B6C8" font-size="28" font-weight="500" text-anchor="start" opacity="1">后一道状态不能替前一道状态补证据</text>
+  
+      <rect x="110" y="184" width="888" height="176" rx="28" fill="#101E30" stroke="#FF9A52" stroke-width="2"/>
+      <circle cx="72" cy="272" r="30" fill="#FF9A52" stroke="#FF9A52" stroke-width="4"/>
+      <text x="72" y="283" fill="#07111F" font-size="30" font-weight="800" text-anchor="middle" opacity="1">1</text>
+      <rect x="142" y="208" width="190" height="54" rx="27" fill="#FF9A52"/>
+<text x="237" y="247" fill="#07111F" font-size="32" font-weight="800" text-anchor="middle" opacity="1">内容成立</text>
+      <text x="142" y="289" fill="#F7FAFC" font-size="36" font-weight="760" text-anchor="start" opacity="1">Brief 就绪 → 方向已选</text>
+      <text x="142" y="334" fill="#A8B6C8" font-size="30" font-weight="500" text-anchor="start" opacity="1">证据：输入、权利、主问题与来源锚点</text>
+      <line x1="72" y1="304" x2="72" y2="408" stroke="#35506B" stroke-width="5"/>
+    
+
+      <rect x="110" y="408" width="888" height="176" rx="28" fill="#101E30" stroke="#FFD166" stroke-width="2"/>
+      <circle cx="72" cy="496" r="30" fill="#FFD166" stroke="#FFD166" stroke-width="4"/>
+      <text x="72" y="507" fill="#07111F" font-size="30" font-weight="800" text-anchor="middle" opacity="1">2</text>
+      <rect x="142" y="432" width="190" height="54" rx="27" fill="#FFD166"/>
+<text x="237" y="471" fill="#07111F" font-size="32" font-weight="800" text-anchor="middle" opacity="1">表达冻结</text>
+      <text x="142" y="513" fill="#F7FAFC" font-size="36" font-weight="760" text-anchor="start" opacity="1">内容已审 → 口播已审</text>
+      <text x="142" y="558" fill="#A8B6C8" font-size="30" font-weight="500" text-anchor="start" opacity="1">证据：时长、结构、事实边界与人工意见</text>
+      <line x1="72" y1="528" x2="72" y2="632" stroke="#35506B" stroke-width="5"/>
+    
+
+      <rect x="110" y="632" width="888" height="176" rx="28" fill="#101E30" stroke="#53D4E8" stroke-width="2"/>
+      <circle cx="72" cy="720" r="30" fill="#53D4E8" stroke="#53D4E8" stroke-width="4"/>
+      <text x="72" y="731" fill="#07111F" font-size="30" font-weight="800" text-anchor="middle" opacity="1">3</text>
+      <rect x="142" y="656" width="190" height="54" rx="27" fill="#53D4E8"/>
+<text x="237" y="695" fill="#07111F" font-size="32" font-weight="800" text-anchor="middle" opacity="1">生产就绪</text>
+      <text x="142" y="737" fill="#F7FAFC" font-size="36" font-weight="760" text-anchor="start" opacity="1">本轮声音已选 → 正式时序 → 视觉预检</text>
+      <text x="142" y="782" fill="#A8B6C8" font-size="30" font-weight="500" text-anchor="start" opacity="1">证据：档案/运行哈希、真实字幕、代表帧</text>
+      <line x1="72" y1="752" x2="72" y2="856" stroke="#35506B" stroke-width="5"/>
+    
+
+      <rect x="110" y="856" width="888" height="176" rx="28" fill="#101E30" stroke="#8D9EFF" stroke-width="2"/>
+      <circle cx="72" cy="944" r="30" fill="#8D9EFF" stroke="#8D9EFF" stroke-width="4"/>
+      <text x="72" y="955" fill="#07111F" font-size="30" font-weight="800" text-anchor="middle" opacity="1">4</text>
+      <rect x="142" y="880" width="190" height="54" rx="27" fill="#8D9EFF"/>
+<text x="237" y="919" fill="#07111F" font-size="32" font-weight="800" text-anchor="middle" opacity="1">文件成立</text>
+      <text x="142" y="961" fill="#F7FAFC" font-size="36" font-weight="760" text-anchor="start" opacity="1">已渲染</text>
+      <text x="142" y="1006" fill="#A8B6C8" font-size="30" font-weight="500" text-anchor="start" opacity="1">证据：目标文件存在，媒体规格与资产检查通过</text>
+      <line x1="72" y1="976" x2="72" y2="1080" stroke="#35506B" stroke-width="5"/>
+    
+
+      <rect x="110" y="1080" width="888" height="176" rx="28" fill="#102A28" stroke="#58D68D" stroke-width="2"/>
+      <circle cx="72" cy="1168" r="30" fill="#58D68D" stroke="#58D68D" stroke-width="4"/>
+      <text x="72" y="1179" fill="#07111F" font-size="30" font-weight="800" text-anchor="middle" opacity="1">5</text>
+      <rect x="142" y="1104" width="190" height="54" rx="27" fill="#58D68D"/>
+<text x="237" y="1143" fill="#07111F" font-size="32" font-weight="800" text-anchor="middle" opacity="1">责任成立</text>
+      <text x="142" y="1185" fill="#F7FAFC" font-size="36" font-weight="760" text-anchor="start" opacity="1">人工已审 → 发布候选</text>
+      <text x="142" y="1230" fill="#A8B6C8" font-size="30" font-weight="500" text-anchor="start" opacity="1">证据：事实、声音、画面、权利与 AI 标识</text>
+      
+    
+</svg>

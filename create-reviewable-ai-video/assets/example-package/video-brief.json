@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "two-clock-video-brief",
+  "inputMode": "idea",
+  "input": {
+    "summary": "把声音能力建立和每次视频生产拆开，并让文章只成为多种内容入口之一。",
+    "sourceFiles": ["source-notes.md"],
+    "sourceState": "user-provided",
+    "rightsState": "owned",
+    "evidenceState": "user-provided"
+  },
+  "audience": "正在设计 AI 内容生产能力的产品经理和创作者",
+  "viewerChange": "能正确安排首次声纹建档与每次视频制作的先后关系",
+  "constraints": {
+    "targetPlatforms": ["video-account", "bilibili"],
+    "durationPreference": "standard",
+    "formatPreference": "landscape-knowledge"
+  },
+  "voiceIntent": {
+    "mode": "none",
+    "localOnly": true,
+    "profileId": null
+  }
+}

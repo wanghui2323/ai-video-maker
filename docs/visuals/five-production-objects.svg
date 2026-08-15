@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1062" height="1500" viewBox="0 0 1062 1500">
+  <rect width="1062" height="1500" fill="#07111F"/>
+  <style>text{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Noto Sans CJK SC','Microsoft YaHei',sans-serif}</style>
+  <text x="64" y="82" fill="#F7FAFC" font-size="52" font-weight="800" text-anchor="start" opacity="1">五个对象，完成五次责任冻结</text>
+  <text x="64" y="132" fill="#A8B6C8" font-size="28" font-weight="500" text-anchor="start" opacity="1">上一层没回答清楚的问题，不交给下一层猜</text>
+  
+      <rect x="64" y="184" width="934" height="202" rx="28" fill="#101E30" stroke="#FF9A52" stroke-width="2"/>
+      <rect x="94" y="212" width="104" height="54" rx="27" fill="#FF9A52"/>
+<text x="146" y="251" fill="#07111F" font-size="32" font-weight="800" text-anchor="middle" opacity="1">01</text>
+      <text x="224" y="254" fill="#F7FAFC" font-size="44" font-weight="800" text-anchor="start" opacity="1">VideoBrief</text>
+      <text x="94" y="316" fill="#F7FAFC" font-size="34" font-weight="650" text-anchor="start" opacity="1">识别输入模式，冻结受众、问题与权利边界</text>
+      <text x="94" y="358" fill="#A8B6C8" font-size="30" font-weight="500" text-anchor="start" opacity="1">缺失：想法会被迫伪装成文章，流程从错误位置开始</text>
+      <line x1="531" y1="392" x2="531" y2="416" stroke="#FF9A52" stroke-width="5" stroke-linecap="round"/>
+<path d="M 519 406 L 531 424 L 543 406" fill="none" stroke="#FF9A52" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    
+
+      <rect x="64" y="436" width="934" height="202" rx="28" fill="#101E30" stroke="#FFD166" stroke-width="2"/>
+      <rect x="94" y="464" width="104" height="54" rx="27" fill="#FFD166"/>
+<text x="146" y="503" fill="#07111F" font-size="32" font-weight="800" text-anchor="middle" opacity="1">02</text>
+      <text x="224" y="506" fill="#F7FAFC" font-size="44" font-weight="800" text-anchor="start" opacity="1">ContentDecision</text>
+      <text x="94" y="568" fill="#F7FAFC" font-size="34" font-weight="650" text-anchor="start" opacity="1">比较候选，只选择本轮要完成的一个方向</text>
+      <text x="94" y="610" fill="#A8B6C8" font-size="30" font-weight="500" text-anchor="start" opacity="1">缺失：越自动，越高效地产出没有重点的视频</text>
+      <line x1="531" y1="644" x2="531" y2="668" stroke="#FFD166" stroke-width="5" stroke-linecap="round"/>
+<path d="M 519 658 L 531 676 L 543 658" fill="none" stroke="#FFD166" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    
+
+      <rect x="64" y="688" width="934" height="202" rx="28" fill="#101E30" stroke="#53D4E8" stroke-width="2"/>
+      <rect x="94" y="716" width="104" height="54" rx="27" fill="#53D4E8"/>
+<text x="146" y="755" fill="#07111F" font-size="32" font-weight="800" text-anchor="middle" opacity="1">03</text>
+      <text x="224" y="758" fill="#F7FAFC" font-size="44" font-weight="800" text-anchor="start" opacity="1">VideoContentPlan</text>
+      <text x="94" y="820" fill="#F7FAFC" font-size="34" font-weight="650" text-anchor="start" opacity="1">冻结认知路径、来源锚点与时间预算</text>
+      <text x="94" y="862" fill="#A8B6C8" font-size="30" font-weight="500" text-anchor="start" opacity="1">缺失：声音、字幕和画面会反向拉扯口播</text>
+      <line x1="531" y1="896" x2="531" y2="920" stroke="#53D4E8" stroke-width="5" stroke-linecap="round"/>
+<path d="M 519 910 L 531 928 L 543 910" fill="none" stroke="#53D4E8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    
+
+      <rect x="64" y="940" width="934" height="202" rx="28" fill="#101E30" stroke="#8D9EFF" stroke-width="2"/>
+      <rect x="94" y="968" width="104" height="54" rx="27" fill="#8D9EFF"/>
+<text x="146" y="1007" fill="#07111F" font-size="32" font-weight="800" text-anchor="middle" opacity="1">04</text>
+      <text x="224" y="1010" fill="#F7FAFC" font-size="44" font-weight="800" text-anchor="start" opacity="1">VideoUnit</text>
+      <text x="94" y="1072" fill="#F7FAFC" font-size="34" font-weight="650" text-anchor="start" opacity="1">把已审内容翻译成声音、字幕与画面输入</text>
+      <text x="94" y="1114" fill="#A8B6C8" font-size="30" font-weight="500" text-anchor="start" opacity="1">缺失：每个工具只能猜测上游真正想表达什么</text>
+      <line x1="531" y1="1148" x2="531" y2="1172" stroke="#8D9EFF" stroke-width="5" stroke-linecap="round"/>
+<path d="M 519 1162 L 531 1180 L 543 1162" fill="none" stroke="#8D9EFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    
+
+      <rect x="64" y="1192" width="934" height="202" rx="28" fill="#101E30" stroke="#58D68D" stroke-width="2"/>
+      <rect x="94" y="1220" width="104" height="54" rx="27" fill="#58D68D"/>
+<text x="146" y="1259" fill="#07111F" font-size="32" font-weight="800" text-anchor="middle" opacity="1">05</text>
+      <text x="224" y="1262" fill="#F7FAFC" font-size="44" font-weight="800" text-anchor="start" opacity="1">WorkflowState</text>
+      <text x="94" y="1324" fill="#F7FAFC" font-size="34" font-weight="650" text-anchor="start" opacity="1">只记录证据支持的通过、阻塞与待审状态</text>
+      <text x="94" y="1366" fill="#A8B6C8" font-size="30" font-weight="500" text-anchor="start" opacity="1">缺失：文件生成会被误报成人工批准或已发布</text>
+      
+    
+</svg>

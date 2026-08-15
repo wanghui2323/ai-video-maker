@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "timingSource": "estimated",
+  "captions": [
+    {"text":"先克隆声音，再开始做视频，这个方向只对了一半。","startMs":0,"endMs":4200},
+    {"text":"第一次使用，先建立可复用、可追踪的声音档案。","startMs":17000,"endMs":22500},
+    {"text":"每条视频可以从想法、文章、提纲、口播、资料包或音频开始。","startMs":29000,"endMs":36000},
+    {"text":"口播确认后，才生成并选择本次正式配音。","startMs":43000,"endMs":49000},
+    {"text":"声音档案先建立一次，视频生产按项目逐次完成。","startMs":68000,"endMs":71500}
+  ]
+}

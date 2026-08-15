@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1062" height="1360" viewBox="0 0 1062 1360">
+  <rect width="1062" height="1360" fill="#07111F"/>
+  <style>text{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Noto Sans CJK SC','Microsoft YaHei',sans-serif}</style>
+  <text x="64" y="82" fill="#F7FAFC" font-size="52" font-weight="800" text-anchor="start" opacity="1">声音克隆不是一次推理，而是一条授权链</text>
+  <text x="64" y="132" fill="#A8B6C8" font-size="28" font-weight="500" text-anchor="start" opacity="1">机器可以拒绝坏音频，不能批准一个人的身份与发布</text>
+  
+      <circle cx="106" cy="258" r="34" fill="#FF9A52" stroke="#FF9A52" stroke-width="4"/>
+      <text x="106" y="270" fill="#07111F" font-size="30" font-weight="800" text-anchor="middle" opacity="1">1</text>
+      <line x1="106" y1="296" x2="106" y2="378" stroke="#35506B" stroke-width="5"/>
+      <rect x="172" y="188" width="826" height="140" rx="28" fill="#101E30" stroke="#FF9A52" stroke-width="2"/>
+      <text x="208" y="248" fill="#FF9A52" font-size="40" font-weight="800" text-anchor="start" opacity="1">授权</text>
+      <text x="208" y="296" fill="#A8B6C8" font-size="31" font-weight="500" text-anchor="start" opacity="1">本人或另有书面授权；证据留在 private/</text>
+    
+
+      <circle cx="106" cy="448" r="34" fill="#FFD166" stroke="#FFD166" stroke-width="4"/>
+      <text x="106" y="460" fill="#07111F" font-size="30" font-weight="800" text-anchor="middle" opacity="1">2</text>
+      <line x1="106" y1="486" x2="106" y2="568" stroke="#35506B" stroke-width="5"/>
+      <rect x="172" y="378" width="826" height="140" rx="28" fill="#101E30" stroke="#FFD166" stroke-width="2"/>
+      <text x="208" y="438" fill="#FFD166" font-size="40" font-weight="800" text-anchor="start" opacity="1">校准档案</text>
+      <text x="208" y="486" fill="#A8B6C8" font-size="31" font-weight="500" text-anchor="start" opacity="1">锁定参考 WAV、逐字稿、Provider、模型与运行时</text>
+    
+
+      <circle cx="106" cy="638" r="34" fill="#53D4E8" stroke="#53D4E8" stroke-width="4"/>
+      <text x="106" y="650" fill="#07111F" font-size="30" font-weight="800" text-anchor="middle" opacity="1">3</text>
+      <line x1="106" y1="676" x2="106" y2="758" stroke="#35506B" stroke-width="5"/>
+      <rect x="172" y="568" width="826" height="140" rx="28" fill="#101E30" stroke="#53D4E8" stroke-width="2"/>
+      <text x="208" y="628" fill="#53D4E8" font-size="40" font-weight="800" text-anchor="start" opacity="1">三个候选</text>
+      <text x="208" y="676" fill="#A8B6C8" font-size="31" font-weight="500" text-anchor="start" opacity="1">同一章整段生成；不跨句拼接，不自动选优</text>
+    
+
+      <circle cx="106" cy="828" r="34" fill="#8D9EFF" stroke="#8D9EFF" stroke-width="4"/>
+      <text x="106" y="840" fill="#07111F" font-size="30" font-weight="800" text-anchor="middle" opacity="1">4</text>
+      <line x1="106" y1="866" x2="106" y2="948" stroke="#35506B" stroke-width="5"/>
+      <rect x="172" y="758" width="826" height="140" rx="28" fill="#101E30" stroke="#8D9EFF" stroke-width="2"/>
+      <text x="208" y="818" fill="#8D9EFF" font-size="40" font-weight="800" text-anchor="start" opacity="1">机器淘汰</text>
+      <text x="208" y="866" fill="#A8B6C8" font-size="31" font-weight="500" text-anchor="start" opacity="1">ASR、关键术语、削波、响度与文件哈希</text>
+    
+
+      <circle cx="106" cy="1018" r="34" fill="#58D68D" stroke="#58D68D" stroke-width="4"/>
+      <text x="106" y="1030" fill="#07111F" font-size="30" font-weight="800" text-anchor="middle" opacity="1">5</text>
+      <line x1="106" y1="1056" x2="106" y2="1138" stroke="#35506B" stroke-width="5"/>
+      <rect x="172" y="948" width="826" height="140" rx="28" fill="#101E30" stroke="#58D68D" stroke-width="2"/>
+      <text x="208" y="1008" fill="#58D68D" font-size="40" font-weight="800" text-anchor="start" opacity="1">本人选择</text>
+      <text x="208" y="1056" fill="#A8B6C8" font-size="31" font-weight="500" text-anchor="start" opacity="1">判断像不像、自然不自然；只批准本次运行</text>
+    
+
+      <circle cx="106" cy="1208" r="34" fill="#FF6B6B" stroke="#FF6B6B" stroke-width="4"/>
+      <text x="106" y="1220" fill="#07111F" font-size="30" font-weight="800" text-anchor="middle" opacity="1">6</text>
+      
+      <rect x="172" y="1138" width="826" height="140" rx="28" fill="#101E30" stroke="#FF6B6B" stroke-width="2"/>
+      <text x="208" y="1198" fill="#FF6B6B" font-size="40" font-weight="800" text-anchor="start" opacity="1">视频审核</text>
+      <text x="208" y="1246" fill="#A8B6C8" font-size="31" font-weight="500" text-anchor="start" opacity="1">声音通过仍不等于事实、画面和发布通过</text>
+    
+</svg>

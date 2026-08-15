@@ -1,0 +1,15 @@
+{
+  "name": "create-reviewable-ai-video-skill",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Multi-input AI video Skill with deterministic workflow, review gates, and optional local voice cloning",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test",
+    "validate:example": "node create-reviewable-ai-video/scripts/validate-package.mjs --dir create-reviewable-ai-video/assets/example-package"
+  }
+}
