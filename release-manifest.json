@@ -2,12 +2,16 @@
   "schemaVersion": 1,
   "name": "ai-video-maker",
   "version": "0.1.0",
-  "artifactState": "github-public",
+  "artifactState": "local-open-source-candidate",
   "publicAssetsIncluded": false,
   "files": [
     {
       "path": ".gitignore",
       "sha256": "2de9fa92b0d1ccf5b63226f30194c2873e3ec7633818b31c5ede0ce33ef0aca3"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "a2a5c1d2d3bbe75cbf7dcc8a2c9edb68b371f5abce373b67511f6ddf85fc75ed"
     },
     {
       "path": "make-ai-video/agents/openai.yaml",
@@ -118,72 +122,12 @@
       "sha256": "3ceeb2c24b49545ae01452eb0f4560e1fa05ef6f9d1d8ffb21e8f985a6646f40"
     },
     {
-      "path": "docs/source-ledger-skill-workflow.md",
-      "sha256": "b71dbeadfc2fede42f1317acca528c37731912f36e24cb5b3c2f0c75ce9d02b9"
-    },
-    {
-      "path": "docs/visuals/cover-skill-workflow.png",
-      "sha256": "4be638a371ac57e76ee3397a9a5e1977048421d04140c73e64741e0fd361f2c6"
-    },
-    {
-      "path": "docs/visuals/cover-skill-workflow.svg",
-      "sha256": "b87294935ec9e223bee6cb013549fffb0e4c4bc282117993b8c7989a8a976c0c"
-    },
-    {
-      "path": "docs/visuals/five-production-objects.png",
-      "sha256": "f34a3c6e767f8c7057f193dd81c5fab21a180f788382d746154574b28b4d49ec"
-    },
-    {
-      "path": "docs/visuals/five-production-objects.svg",
-      "sha256": "9e1e602bfa9074375437f6ddae35837f985ed74c3a71dd00ff7de85432842663"
-    },
-    {
-      "path": "docs/visuals/local-voice-gates.png",
-      "sha256": "99a97d9f62dc2305c37566826c2297f044d9ba4cb0a6f4959f44abc501501e1e"
-    },
-    {
-      "path": "docs/visuals/local-voice-gates.svg",
-      "sha256": "b11e6fc246c318826020d05dced60f5106371c63a80d2d875a4dad8ce49309b5"
-    },
-    {
-      "path": "docs/visuals/release-gates.png",
-      "sha256": "4de993f5484bab1177138c8763ff6abd63851ea1c1d6b808703130ee4daae0bc"
-    },
-    {
-      "path": "docs/visuals/release-gates.svg",
-      "sha256": "454cfe29bbcde0cfac357f5915d2ccc9939e962ee8fd0b2942b3f0f1e16a5e5a"
-    },
-    {
-      "path": "docs/visuals/skill-workflow-architecture.png",
-      "sha256": "492e5dbd7774ede66933f536c53ff4cc1db682c1026ec448402bb9ef6b56741e"
-    },
-    {
-      "path": "docs/visuals/skill-workflow-architecture.svg",
-      "sha256": "13ec8dd082a43cd84b0af152b2961cb3982978f3794108ee8055a28389a30630"
-    },
-    {
-      "path": "docs/visuals/two-clock-workflow.png",
-      "sha256": "f9f28aadaea03b1d70930bb3d933ab36f57f8326196416bc3e166ee711d8e3cc"
-    },
-    {
-      "path": "docs/visuals/two-clock-workflow.svg",
-      "sha256": "231653543d4e286130325792025176761596466bf912f13fe00a85d3b465e4a4"
-    },
-    {
-      "path": "docs/文章转视频应该做成Skill还是Workflow.md",
-      "sha256": "09de696fb9ebeaaf6129c7ef88e97610dcdaf9cdc2e373c2b079c59fddaee8c3"
-    },
-    {
-      "path": "LICENSE",
-      "sha256": "a2a5c1d2d3bbe75cbf7dcc8a2c9edb68b371f5abce373b67511f6ddf85fc75ed"
-    },
-    {
       "path": "package.json",
       "sha256": "9f131b17b80c7407da912a0ca13141ad32e176c5a3309380faaf033aaa7c0e4c"
     },
     {
       "path": "README.md",
-      "sha256": "2c9806a895cbe8fd3daae0abe8fbd9e83d3285b3b3b5a81d5b058f54232950ea"
+      "sha256": "3299e5a7349939cb56c0badd7705adfcca27ea0cfd2e3a5c77f24bf0a285e919"
     },
     {
       "path": "SECURITY.md",
@@ -191,7 +135,7 @@
     },
     {
       "path": "test/release.test.mjs",
-      "sha256": "76585a9c6b00c46a0004093d8100cdd3e1643848610ca8219ba68bb7323f2ae5"
+      "sha256": "93f84aa459698b6f01f0dd928ac518570dd403a8c9058a03f450e54c3659245d"
     }
   ]
 }

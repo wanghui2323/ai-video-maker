@@ -39,9 +39,10 @@ VideoBrief → ContentDecision → VideoContentPlan → 口播确认
 - `assets/example-package/`：以“一个想法”为入口的可运行示例；
 - `scripts/validate-package.mjs`：零依赖生产合同校验器；
 - 本地声音克隆 Provider、Profile/Run CLI、机器 QA 与禁用模板；
-- 架构文章、信息图、来源账本、安全说明和 MIT License。
+- 安全说明、失败路径测试和 MIT License。
 
 仓库不包含声音样本、授权证明、生成音频、模型权重、平台凭据或任何人的已接受声音档案。
+完整公众号文章独立维护，不随本仓库分发。
 
 ## 运行公开示例
 
@@ -99,8 +100,6 @@ pip install -r make-ai-video/requirements-voice-mlx.txt
 
 完整流程见 [`voice-cloning.md`](make-ai-video/references/voice-cloning.md)。机器只能淘汰坏音频，不能代替声音所有者判断“像不像本人”“是否自然”，也不能批准公开发布。
 
-## 架构文章与状态
+## 状态边界
 
-阅读[《做 AI 视频，别把文章当成唯一入口》](docs/文章转视频应该做成Skill还是Workflow.md)。来源与不作出的结论记录在[来源账本](docs/source-ledger-skill-workflow.md)。
-
-本仓库已公开发布到 GitHub。测试通过与 GitHub 可见不等于已经发布到 npm 或任何内容平台。声音与隐私问题请先读 [SECURITY.md](SECURITY.md)。
+测试通过只证明当前版本的本地合同、失败路径和隐私门禁成立，不等于已经发布到 npm 或任何内容平台，也不代表使用者生成的视频已经通过人工审核。声音与隐私问题请先读 [SECURITY.md](SECURITY.md)。

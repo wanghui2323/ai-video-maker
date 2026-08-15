@@ -101,9 +101,20 @@ test('the release contains no bundled voice/model files or known private paths',
   }
 });
 
+test('the complete public-account article is not bundled in the GitHub release', async () => {
+  const files = await walk(root);
+  const relativePaths = files.map((file) => path.relative(root, file).split(path.sep).join('/'));
+  assert.equal(relativePaths.includes('docs/文章转视频应该做成Skill还是Workflow.md'), false);
+  assert.equal(relativePaths.includes('docs/source-ledger-skill-workflow.md'), false);
+
+  const readme = await readFile(path.join(root, 'README.md'), 'utf8');
+  assert.equal(readme.includes('架构文章与状态'), false);
+  assert.equal(readme.includes('docs/文章转视频应该做成Skill还是Workflow.md'), false);
+});
+
 test('release manifest hashes match every declared file', async () => {
   const manifest = await readJson(path.join(root, 'release-manifest.json'));
-  assert.equal(manifest.artifactState, 'github-public');
+  assert.equal(manifest.artifactState, 'local-open-source-candidate');
   for (const item of manifest.files) {
     const data = await readFile(path.join(root, item.path));
     assert.equal(createHash('sha256').update(data).digest('hex'), item.sha256, item.path);
