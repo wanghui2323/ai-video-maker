@@ -10,6 +10,10 @@
       "sha256": "2de9fa92b0d1ccf5b63226f30194c2873e3ec7633818b31c5ede0ce33ef0aca3"
     },
     {
+      "path": "install.sh",
+      "sha256": "7fd0574e8a67ffdb9a7368f71e58e8b54ea157a65991441b717b8f8f714a2a55"
+    },
+    {
       "path": "LICENSE",
       "sha256": "a2a5c1d2d3bbe75cbf7dcc8a2c9edb68b371f5abce373b67511f6ddf85fc75ed"
     },
@@ -127,7 +131,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "3299e5a7349939cb56c0badd7705adfcca27ea0cfd2e3a5c77f24bf0a285e919"
+      "sha256": "642b9001ca6c2382e0a4abd438a1732b01521f8959a2133c2b2fedac0293c2d1"
     },
     {
       "path": "SECURITY.md",
@@ -135,7 +139,7 @@
     },
     {
       "path": "test/release.test.mjs",
-      "sha256": "93f84aa459698b6f01f0dd928ac518570dd403a8c9058a03f450e54c3659245d"
+      "sha256": "94ebba9b69fa66145d24f27f1afb35f5a2b8d0431c374913c364c201efbf0550"
     }
   ]
 }

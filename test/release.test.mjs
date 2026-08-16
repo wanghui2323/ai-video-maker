@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
-import {cp, mkdtemp, readFile, readdir, writeFile} from 'node:fs/promises';
+import {access, cp, mkdtemp, readFile, readdir, writeFile} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import path from 'node:path';
 import {spawnSync} from 'node:child_process';
@@ -75,6 +75,15 @@ test('the public voice starter is disabled', async () => {
   assert.equal(consent.remoteUploadAuthorized, false);
 });
 
+test('the repository includes a non-overwriting installer', async () => {
+  await access(path.join(root, 'install.sh'));
+  const installer = await readFile(path.join(root, 'install.sh'), 'utf8');
+  assert.match(installer, /TARGET_DIR/);
+  assert.match(installer, /already|已存在/);
+  assert.equal(installer.includes('rm -rf'), false);
+  assert.equal(installer.includes('curl |'), false);
+});
+
 const walk = async (directory) => {
   const files = [];
   for (const entry of await readdir(directory, {withFileTypes: true})) {
@@ -106,10 +115,13 @@ test('the complete public-account article is not bundled in the GitHub release',
   const relativePaths = files.map((file) => path.relative(root, file).split(path.sep).join('/'));
   assert.equal(relativePaths.includes('docs/文章转视频应该做成Skill还是Workflow.md'), false);
   assert.equal(relativePaths.includes('docs/source-ledger-skill-workflow.md'), false);
+  assert.equal(relativePaths.includes('docs/不用视频生成模型-我怎样搭起自己的数字人视频系统.md'), false);
+  assert.equal(relativePaths.includes('docs/source-ledger-personal-digital-human.md'), false);
 
   const readme = await readFile(path.join(root, 'README.md'), 'utf8');
   assert.equal(readme.includes('架构文章与状态'), false);
   assert.equal(readme.includes('docs/文章转视频应该做成Skill还是Workflow.md'), false);
+  assert.equal(readme.includes('docs/不用视频生成模型-我怎样搭起自己的数字人视频系统.md'), false);
 });
 
 test('release manifest hashes match every declared file', async () => {
