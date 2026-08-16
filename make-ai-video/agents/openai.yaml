@@ -1,4 +1,4 @@
 interface:
   display_name: "AI 视频制作助手"
-  short_description: "主动执行从输入、本人声音到画面和人工审核的完整视频流程"
-  default_prompt: "使用 $make-ai-video 主动执行完整流程，把这个想法或素材制作成一条由我确认的视频。"
+  short_description: "从想法或文章开始，主动推进声音、画面与人工审核"
+  default_prompt: "使用 $make-ai-video，把我的想法或素材推进到下一次需要我确认的步骤，并告诉我产物位置。"

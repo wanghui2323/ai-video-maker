@@ -1,10 +1,14 @@
 {
   "schemaVersion": 1,
   "name": "ai-video-maker",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "artifactState": "local-open-source-candidate",
   "publicAssetsIncluded": false,
   "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "sha256": "807b787863f0ba43bcab8bc44d3f1ccd6f92835680ece5727b5390fd0e35a8a0"
+    },
     {
       "path": ".gitignore",
       "sha256": "2de9fa92b0d1ccf5b63226f30194c2873e3ec7633818b31c5ede0ce33ef0aca3"
@@ -19,7 +23,7 @@
     },
     {
       "path": "make-ai-video/agents/openai.yaml",
-      "sha256": "7786222092dd05da27be4d207b192877c09961b40748fff4443ca3fe7dab48bd"
+      "sha256": "29096f15297ef5445f49d54503be8f5069ded5464f6d6f790af0d74d79720ff4"
     },
     {
       "path": "make-ai-video/assets/example-package/captions.json",
@@ -86,6 +90,10 @@
       "sha256": "c4d457513eb9cc0247c7eede773728f5e96d887ada258c129165bcfb2a4c8918"
     },
     {
+      "path": "make-ai-video/references/rendering-adapter.md",
+      "sha256": "d94ab89f9fca870c7e1319e77b33bfb810357cb8d2cc73bf71dcde7721073ab2"
+    },
+    {
       "path": "make-ai-video/references/visual-routing.md",
       "sha256": "dcf879ca03965e57d8e02f57d6c7f66ed4ae32316ae92f7fd596ef36f62d6913"
     },
@@ -96,6 +104,14 @@
     {
       "path": "make-ai-video/requirements-voice-mlx.txt",
       "sha256": "e5f03e3ccb41a807f998282b299fb12a99b9005c8d3e3e0265afcde9bda64235"
+    },
+    {
+      "path": "make-ai-video/scripts/create-package.mjs",
+      "sha256": "f555d3a9e49e64c84765a7f32b8087df8efed885de6d5e3915588632e516a8e8"
+    },
+    {
+      "path": "make-ai-video/scripts/doctor.mjs",
+      "sha256": "d9e7c05f42b3c9acafa4be27d22b6fcc0ff0661772023c2817e063bcfce6dc38"
     },
     {
       "path": "make-ai-video/scripts/providers/qwen3-tts-mlx.py",
@@ -123,15 +139,19 @@
     },
     {
       "path": "make-ai-video/SKILL.md",
-      "sha256": "8e34f4457cc756038f808afaec87ab5910db7f496db9531af932689c4c095144"
+      "sha256": "c1aa7edba9e6dd8c6bb17a8dd66d7a490563459e0160d5dcc74ec4510cba489e"
     },
     {
       "path": "package.json",
-      "sha256": "2e99594742c53c426623a9b366166dc866f12071f83758fbdbf4774f1e5ca44d"
+      "sha256": "e1089ebd2d8d49b99cdb5f8a293bb3025e963926a8dd74d8dc1e0a91b9fa187a"
     },
     {
       "path": "README.md",
-      "sha256": "542e5be035bd735f1aae90ec3fcb6c9b48672642a01619af4eeeaa4c25945e97"
+      "sha256": "03927a3e5d9fe9af33743305421362c244a5c666a9de169104d0411e59118539"
+    },
+    {
+      "path": "scripts/update-release-manifest.mjs",
+      "sha256": "83874ef44fd47accaff109d052b6e62a9469b11ce0e992b3661903fe6e5e56a9"
     },
     {
       "path": "SECURITY.md",
@@ -139,7 +159,7 @@
     },
     {
       "path": "test/release.test.mjs",
-      "sha256": "c831a4078f6d30d595ea6e94a2516c92aa53efae00d357f7e97db47c8bbc3d34"
+      "sha256": "da4cde6b05b34e49f75637a27757b7631a3f3350a0bf6cf8e2f8eb9958cc1767"
     }
   ]
 }

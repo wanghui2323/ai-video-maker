@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  release-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Use Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Run release tests
+        run: npm test
+
+      - name: Validate public example
+        run: npm run validate:example
+
+      - name: Check release manifest is current
+        run: |
+          npm run manifest:update
+          git diff --exit-code -- release-manifest.json

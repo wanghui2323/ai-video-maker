@@ -11,6 +11,8 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const skill = path.join(root, 'make-ai-video');
 const example = path.join(skill, 'assets', 'example-package');
 const validator = path.join(skill, 'scripts', 'validate-package.mjs');
+const doctor = path.join(skill, 'scripts', 'doctor.mjs');
+const createPackage = path.join(skill, 'scripts', 'create-package.mjs');
 
 const validate = (directory) => spawnSync(process.execPath, [validator, '--dir', directory], {
   cwd: root,
@@ -40,6 +42,35 @@ test('the public example validates but remains a local package', async () => {
   assert.equal(state.stages.rendered, 'pending');
   assert.equal(state.stages.human_reviewed, 'pending');
   assert.equal(state.stages.approved, 'pending');
+});
+
+test('doctor reports the base planning and validation capability', () => {
+  const result = spawnSync(process.execPath, [doctor, '--json'], {cwd: root, encoding: 'utf8'});
+  assert.equal(result.status, 0, result.stderr || result.stdout);
+  const report = JSON.parse(result.stdout);
+  assert.equal(report.status, 'ready');
+  assert.equal(report.capabilities.contentPlanning, 'ready');
+  assert.equal(report.capabilities.packageValidation, 'ready');
+  assert.match(report.capabilities.deterministicRendering, /adapter/);
+});
+
+test('create-package makes a private brief-only package and refuses overwrite', async () => {
+  const parent = await mkdtemp(path.join(tmpdir(), 'ai-video-maker-create-'));
+  const target = path.join(parent, 'first-video');
+  const args = [createPackage, '--dir', target, '--input-mode', 'idea', '--summary', '解释一个产品判断', '--voice', 'cloned'];
+  const result = spawnSync(process.execPath, args, {cwd: root, encoding: 'utf8'});
+  assert.equal(result.status, 0, result.stderr || result.stdout);
+  const brief = await readJson(path.join(target, 'video-brief.json'));
+  const state = await readJson(path.join(target, 'workflow-state.json'));
+  assert.equal(brief.inputMode, 'idea');
+  assert.equal(brief.input.rightsState, 'unconfirmed');
+  assert.equal(state.stages.brief_ready, 'pending');
+  assert.equal(state.dependencies.voiceProfile.status, 'pending');
+  assert.match(await readFile(path.join(target, '.gitignore'), 'utf8'), /private\//);
+
+  const second = spawnSync(process.execPath, args, {cwd: root, encoding: 'utf8'});
+  assert.notEqual(second.status, 0);
+  assert.match(`${second.stdout}\n${second.stderr}`, /不会覆盖/);
 });
 
 test('estimated captions cannot pass the formal timing gate', async () => {
@@ -161,9 +192,23 @@ test('the complete public-account article is not bundled in the GitHub release',
   assert.equal(readme.includes('docs/不用视频生成模型-我怎样搭起自己的数字人视频系统.md'), false);
 });
 
+test('README distinguishes built-in workflow capabilities from the rendering adapter boundary', async () => {
+  const readme = await readFile(path.join(root, 'README.md'), 'utf8');
+  assert.match(readme, /当前版本已经内置/);
+  assert.match(readme, /当前版本尚未内置/);
+  assert.match(readme, /通用成片渲染器/);
+  assert.match(readme, /四次确认/);
+});
+
 test('release manifest hashes match every declared file', async () => {
   const manifest = await readJson(path.join(root, 'release-manifest.json'));
   assert.equal(manifest.artifactState, 'local-open-source-candidate');
+  const declared = manifest.files.map((item) => item.path).sort();
+  const actual = (await walk(root))
+    .map((file) => path.relative(root, file).split(path.sep).join('/'))
+    .filter((file) => !file.startsWith('.git/') && file !== 'release-manifest.json' && file !== '.DS_Store')
+    .sort();
+  assert.deepEqual(declared, actual);
   for (const item of manifest.files) {
     const data = await readFile(path.join(root, item.path));
     assert.equal(createHash('sha256').update(data).digest('hex'), item.sha256, item.path);

@@ -1,6 +1,6 @@
 {
   "name": "ai-video-maker-skill",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "type": "module",
   "description": "Chinese AI video maker Skill with multi-input planning, review gates, and optional local voice cloning",
@@ -10,6 +10,9 @@
   },
   "scripts": {
     "test": "node --test",
+    "doctor": "node make-ai-video/scripts/doctor.mjs",
+    "create:package": "node make-ai-video/scripts/create-package.mjs",
+    "manifest:update": "node scripts/update-release-manifest.mjs",
     "validate:example": "node make-ai-video/scripts/validate-package.mjs --dir make-ai-video/assets/example-package"
   }
 }

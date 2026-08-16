@@ -1,97 +1,120 @@
 # AI 视频制作助手
 
-> 不依赖视频生成模型，从你的内容、声音和视觉语言出发，搭建可控制的个人数字人视频生产线。
+[![CI](https://github.com/wanghui2323/ai-video-maker/actions/workflows/ci.yml/badge.svg)](https://github.com/wanghui2323/ai-video-maker/actions/workflows/ci.yml)
 
-`ai-video-maker` 是一个中文开源 Skill + Workflow。输入一个想法、文章、提纲、已有口播、资料包或音频，它会协助完成内容决策、脚本、本人声音、程序化画面和人工审核。文章转视频只是输入路径之一。
+> 不用视频生成模型，也不必先做一张会对口型的脸。从一个想法、一篇文章或一段口播开始，让 AI 协助完成内容、本人声音、字幕、可控画面和人工审核。
 
-**MIT 开源｜一条命令安装｜支持 Codex、Claude Code、Cursor、OpenCode、Windsurf，并可以项目级安装到 TRAE。**
+`ai-video-maker` 是一个中文开源 Skill。它把我们真实做视频时反复对齐的顺序、检查方法和隐私边界交给 AI 编程工具执行。
+
+文章转视频只是其中一种入口。你也可以从想法、提纲、已有口播、资料包或音频开始。
+
+**MIT 开源｜一条命令安装｜支持用户级与项目级 Skill 安装｜本人声音默认只在本地处理**
+
+## 它解决什么问题
+
+普通的“文章转视频”工具常把所有步骤压成一次生成：稿子变了，声音和画面一起重做；某一段不满意，也很难只改那一层。
+
+这个项目把一条视频拆成可以检查和恢复的五层：
+
+```text
+内容 → 声音 → 字幕时间 → 画面 → 审核记录
+```
+
+- 声音不满意，只重新选择或生成声音；
+- 画面不满意，只修改画面元素和出现时间；
+- 已确认的口播、本人声音和审核记录可以继续复用；
+- 本地生成、机器检查、本人审核和可以发布，始终是四个不同状态。
+
+它更适合知识解释、产品演示、流程关系和课程视频，不适合需要大量真人表演或电影感镜头的内容。
+
+## 两步开始
+
+### 方式一：直接交给 AI 安装
+
+把下面这句话发给 Codex、Claude Code、Cursor、OpenCode 或其他支持 Agent Skills 的 AI 编程工具：
+
+> 请从 https://github.com/wanghui2323/ai-video-maker 安装 `make-ai-video` Skill，不要覆盖已有同名 Skill。安装后直接启动，先问我准备了什么素材、是否使用本人声音，然后主动推进到下一个需要我确认的步骤；每次告诉我完成了什么、文件在哪里。
+
+### 方式二：在终端安装
 
 ```bash
+git clone https://github.com/wanghui2323/ai-video-maker.git
+cd ai-video-maker
 ./install.sh
 ```
 
-安装后刷新或重启 Agent，直接用自然语言说“我有一个想法，按完整流程帮我做成视频”即可开始。Skill 会主动执行当前可安全完成的步骤，并持续推进到下一个需要本人确认的门禁，而不只是输出操作说明。
+刷新或重启 AI 编程工具后，直接说：
 
-当前路线面向知识解释、机制演示、流程关系和课程视频：用本地声音克隆、真实字幕时序与确定性渲染建立个人表达系统。它不要求文生视频模型，也不声称已经包含真人脸或口型驱动。
+> 我有一个关于 AI 产品评审的想法，帮我做成一条视频。
 
-Skill 负责识别输入、补全缺口、比较候选、决定时长与画幅；内置 Workflow 合同负责状态顺序、声音隐私、正式时序、产物和人工审核门禁。
+Skill 会先检查环境、识别输入、创建生产包，并继续执行到下一个真正需要你决定的步骤，而不只是输出一份教程。
 
-启动后用户能感知到的节奏是：
+## 第一次制作，你只需要做四次确认
+
+1. **提供素材**：一句想法、一篇文章、一份提纲、已有口播、资料包或音频都可以；
+2. **确认口播**：确认这条视频讲什么、面向谁、预计多长；
+3. **选择声音**：需要本人声音时，先完成授权和本地建档，再从三个完整版本中选择；
+4. **审核成片**：先看关键画面，再看完整视频，最后决定是否发布。
+
+环境检查、生产包建立、对象校验和状态记录由 Skill 执行。安装依赖、下载大模型、声音授权和发布等操作仍会在需要时向你确认。
+
+## 当前版本能做到什么
+
+### 当前版本已经内置
+
+| 能力 | 当前状态 |
+| --- | --- |
+| 想法、文章、提纲、口播、资料包、音频六种入口 | 已内置输入路由与生产合同 |
+| 选题、口播、时长和画幅判断 | 已内置 Skill 工作方法与人工确认门禁 |
+| 新建生产包 | 已内置不覆盖原目录的创建脚本 |
+| 环境检查 | 已内置 Node、Python、FFmpeg 与能力边界检查 |
+| 本地声音克隆 | 已内置 Apple Silicon 上的 Qwen3-TTS / MLX 参考 Provider、声音档案、三候选、机器 QA 与本人选择 |
+| 字幕与生产状态 | 已内置正式/估算时序区分和生产包校验器 |
+| 画幅与视觉任务 | 已内置横屏知识版、竖屏人物版和语义分镜规则 |
+| 隐私与人工审核 | 已内置私有目录、哈希锁定、失败恢复和发布状态边界 |
+
+### 当前版本尚未内置
+
+- **通用成片渲染器**：仓库可以生成画面任务、字幕和 `video-unit.json`，但仍需接入 Remotion、现有剪辑工程或你自己的模板；
+- **真人脸与口型驱动**：个人数字人的重点目前是内容、本人声音、视觉语言和生产记录；
+- **自动发布到内容平台**：Skill 会区分草稿、预览、定时和发布，不会替你自动批准整片；
+- **模型权重与个人声音样本**：模型需要按需下载，声音、授权证明和克隆结果不会进入 GitHub。
+
+因此，安装完成代表 AI 获得了正确的制作方法和本地执行工具；是否能直接生成 MP4，还取决于当前项目是否已经接入渲染器。Skill 会如实报告这个状态，不会把视觉计划说成已经生成成片。
+
+## 启动后的完整节奏
 
 ```text
-输入与设备检查 → 创建生产包 → 内容与口播确认
-→ 本地模型/声音档案（按需）→ 三候选与本人选声
-→ 正式字幕时序 → 画面预检与渲染 → 整片人工审核
+输入与环境检查 → 创建生产包 → 内容方向与口播确认
+→ 首次声音建档（按需）→ 本次三个声音候选与本人选择
+→ 正式字幕时间 → 画面预检 → 渲染 → 整片人工审核
 ```
 
-Skill 会持续报告当前阶段、已生成文件和下一项人工决定。只有模型下载等系统权限、声音授权、口播确认、本人选声、整片审核和发布授权需要停下来；批准后从原阶段继续。
+声音分成两条节奏：
 
-## 最重要的节奏：两条时钟
+- **首次建档**：授权 → 参考录音和准确文字 → 三个校准候选 → 机器排错 → 本人选择 → 可复用声音档案；
+- **每条视频**：口播确认 → 检查声音档案 → 生成本次三个完整版本 → 本人选择 → 字幕和画面。
 
-首次明确使用克隆声音且没有可用档案时，先建立声音能力：
-
-```text
-授权 → 参考录音/逐字稿 → 三个校准候选 → 机器 QA
-→ 声音所有者选择 → production-pilot VoiceProfile
-```
-
-每条视频再执行自己的生产链：
-
-```text
-VideoBrief → ContentDecision → VideoContentPlan → 口播确认
-→ 本次配音选择 → 正式时序 → 视觉预检 → 渲染 → 人工审核
-```
-
-因此，“先做声音”适用于首次建档；本次正式配音仍然必须等口播确认后生成。
+先建立声音能力，不等于提前生成本次正式配音。本次配音必须等口播确认以后再做。
 
 ## 支持的输入
 
-- `idea`：从一个想法协助展开候选，并标记待核验事实；
-- `article`：从完整文章中选择可独立成立的问题；
+- `idea`：从一个想法展开候选，并标记待核验事实；
+- `article`：从文章中选出可以独立讲清的问题，不等比例压缩全文；
 - `outline`：补全逻辑、证据和节奏；
-- `script`：审核已有口播，不随意改写已确认表达；
+- `script`：审核已有口播，不随意改写已经确认的表达；
 - `source-pack`：从多份资料建立来源锚点；
-- `audio`：先转写，再决定保留原话还是整理内容。
+- `audio`：先转写，再决定保留原话、整理口播，还是只制作字幕和画面。
 
-## 公开仓库包含什么
+## 安装位置
 
-- `make-ai-video/SKILL.md`：中文 Agent 操作入口；
-- `assets/example-package/`：以“一个想法”为入口的可运行示例；
-- `scripts/validate-package.mjs`：零依赖生产合同校验器；
-- 本地声音克隆 Provider、Profile/Run CLI、机器 QA 与禁用模板；
-- 安全说明、失败路径测试和 MIT License。
-
-仓库不包含声音样本、授权证明、生成音频、模型权重、平台凭据或任何人的已接受声音档案。
-完整公众号文章独立维护，不随本仓库分发。
-
-## 运行公开示例
-
-要求 Node.js 20 或更高版本，不需要安装 npm 依赖：
-
-```bash
-npm test
-npm run validate:example
-```
-
-预期结果包括：
-
-```text
-valid
-input=idea candidates=2 selected=two-clock-video-production
-durationMs=72000 release=local_package
-```
-
-`valid` 只表示对象合同、时间轴和状态顺序成立，不表示已经渲染或可以发布。
-
-## 一键安装 Skill
-
-克隆或下载仓库后，在仓库根目录运行：
+默认命令会尝试安装到五个用户级目录：
 
 ```bash
 ./install.sh
 ```
 
-默认会安装到 Codex、Claude Code、Cursor、OpenCode 和 Windsurf 的用户级 Skill 目录。如果只使用某一个 Agent：
+也可以只安装一个：
 
 ```bash
 ./install.sh --target codex
@@ -101,63 +124,87 @@ durationMs=72000 release=local_package
 ./install.sh --target windsurf
 ```
 
-TRAE 目前使用官方已公开的项目兼容目录；团队仓库也推荐用这种方式：
+团队项目或 TRAE 推荐使用项目级安装：
 
 ```bash
 ./install.sh --target all --scope project --project-dir /path/to/your-project
 ```
 
-| 工具 | 用户级安装 | 项目级共享 |
+| 工具 | 用户级目录 | 项目级共享目录 |
 | --- | --- | --- |
 | Codex | `~/.agents/skills` | `.agents/skills` |
 | Claude Code | `~/.claude/skills` | `.claude/skills` |
 | Cursor | `~/.cursor/skills` | `.agents/skills` |
 | OpenCode | `~/.config/opencode/skills` | `.agents/skills` |
 | Windsurf | `~/.codeium/windsurf/skills` | `.agents/skills` |
-| TRAE | 使用项目级路径 | `.agents/skills` |
+| TRAE | 使用项目级目录 | `.agents/skills` |
 
-安装脚本不会覆盖已有同名 Skill；已有目录会被安全跳过。这个 Skill 遵循通用 `SKILL.md` 结构，各 Agent 可以自动匹配任务，也可以显式调用。
+安装脚本不会覆盖已有同名 Skill。目录复制测试已经覆盖上述路径；实际能否自动发现 Skill，还取决于你使用的产品版本是否支持 Agent Skills。OpenCode 的兼容目录可查看其[官方 Agent Skills 文档](https://opencode.ai/docs/skills)。
 
-重新启动或刷新 Agent 后，可以直接说：
+## 开发者检查
 
-- “我有一个关于 AI 产品评审的想法，帮我做成视频。”
-- “把这篇文章拆成一条 75 秒视频。”
-- “继续使用我已经确认的本地声音做这条口播。”
-- “我已有口播，只帮我设计画面、字幕和审核门禁。”
+要求 Node.js 20 或更高版本，不需要安装 npm 依赖。
 
-## 在项目中使用
+检查当前环境和真实能力边界：
 
 ```bash
-cp -R make-ai-video/assets/example-package my-video-package
-node make-ai-video/scripts/validate-package.mjs --dir my-video-package
+npm run doctor
 ```
 
-依次维护：`video-brief.json`、`content-decision.json`、`video-content-plan.json`、`video-unit.json` 和 `workflow-state.json`。
+创建一个不会覆盖现有目录的新生产包：
 
-输入路由见 [`input-routing.md`](make-ai-video/references/input-routing.md)，对象合同见 [`content-contract.md`](make-ai-video/references/content-contract.md)，生产门禁见 [`production-gates.md`](make-ai-video/references/production-gates.md)。
+```bash
+npm run create:package -- \
+  --dir ./my-first-video \
+  --input-mode idea \
+  --summary "解释一个 AI 产品判断" \
+  --voice cloned
+```
+
+运行公开示例与回归测试：
+
+```bash
+npm run validate:example
+npm test
+```
+
+`valid` 只表示对象合同、时间顺序和状态边界成立，不表示已经渲染或可以发布。
+
+## 项目结构
+
+```text
+make-ai-video/
+├── SKILL.md                       # Agent 操作入口
+├── agents/openai.yaml             # Skill 的界面信息
+├── references/                    # 输入、内容、声音、画面、渲染与门禁合同
+├── assets/example-package/        # 可校验的完整对象示例
+├── assets/voice-clone-starter/    # 默认禁用的声音建档模板
+└── scripts/                       # 环境检查、生产包、声音和校验工具
+```
 
 ## 可选：本地声音克隆
 
-声音克隆默认关闭。只使用本人或另有书面授权的声音；默认本地和私有，未经另行授权不上传第三方。
+声音克隆默认关闭，只能用于本人或已经单独获得授权的声音。参考录音、逐字稿、候选、声音档案和模型都应放在本地私有目录。
 
-```bash
-python3 -m venv .venv-voice
-source .venv-voice/bin/activate
-pip install -r make-ai-video/requirements-voice-mlx.txt
-```
+参考实现面向 Apple Silicon，使用 Qwen3-TTS Base + MLX，并用 Whisper 做转写回检。机器只能排除漏句、重复、音量异常或破音，不能替声音所有者判断“像不像本人”“是否自然”。
 
-完整流程见 [`voice-cloning.md`](make-ai-video/references/voice-cloning.md)。机器只能淘汰坏音频，不能代替声音所有者判断“像不像本人”“是否自然”，也不能批准公开发布。
+完整模型准备、授权、三候选和本人选择流程见 [`voice-cloning.md`](make-ai-video/references/voice-cloning.md)。
 
-## 不用视频生成模型，画面从哪里来
+## 开源与隐私
 
-Skill 会先把已确认口播翻译成语义场景、字幕与时间轴，再交给确定性渲染器。你可以接入 Remotion、现有剪辑工程或自己的模板库。公开仓库提供生产合同和适配接口，不包含作者的私有品牌 Remotion 组件。
+仓库包含 Skill、对象合同、环境与生产包工具、本地声音 Provider、机器 QA、示例和测试。
 
-这种路线适合图表、流程、产品交互、机制解释和知识课程；如果需要写实人物表演、开放世界镜头或口型驱动，可以把相应模型作为可选场景 Provider 接入。
+仓库不包含：
 
-## 状态边界
+- 任何人的参考录音、逐字稿、授权证明和克隆音频；
+- 已接受的声音档案、模型权重或缓存；
+- 平台账号、API 密钥和发布凭据；
+- 作者的私有品牌组件与完整公众号文章。
 
-测试通过只证明当前版本的本地合同、失败路径和隐私门禁成立，不等于已经发布到 npm 或任何内容平台，也不代表使用者生成的视频已经通过人工审核。声音与隐私问题请先读 [SECURITY.md](SECURITY.md)。
+声音与隐私问题请先读 [SECURITY.md](SECURITY.md)。
 
 ## 开源协议
 
-本项目采用 [MIT License](LICENSE)。你可以使用、修改、分发和集成到自己的项目中，但需保留版权和许可声明。声音参考、模型权重和你自己接入的第三方素材，仍需分别遵守它们各自的授权与许可。
+本项目采用 [MIT License](LICENSE)。你可以使用、修改、分发和集成代码，但需要保留版权与许可声明。声音、模型和第三方素材仍需分别遵守各自的授权与许可。
+
+如果这个项目对你有帮助，欢迎点一个 Star；遇到不清楚的步骤，也欢迎提交 Issue。
