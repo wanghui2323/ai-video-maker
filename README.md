@@ -4,6 +4,14 @@
 
 `ai-video-maker` 是一个中文开源 Skill + Workflow。输入一个想法、文章、提纲、已有口播、资料包或音频，它会协助完成内容决策、脚本、本人声音、程序化画面和人工审核。文章转视频只是输入路径之一。
 
+**MIT 开源｜一条命令安装｜支持 Codex、Claude Code、Cursor、OpenCode、Windsurf，并可以项目级安装到 TRAE。**
+
+```bash
+./install.sh
+```
+
+安装后刷新或重启 Agent，直接用自然语言说“我有一个想法，帮我做成视频”即可开始。
+
 当前路线面向知识解释、机制演示、流程关系和课程视频：用本地声音克隆、真实字幕时序与确定性渲染建立个人表达系统。它不要求文生视频模型，也不声称已经包含真人脸或口型驱动。
 
 Skill 负责识别输入、补全缺口、比较候选、决定时长与画幅；内置 Workflow 合同负责状态顺序、声音隐私、正式时序、产物和人工审核门禁。
@@ -65,7 +73,7 @@ durationMs=72000 release=local_package
 
 `valid` 只表示对象合同、时间轴和状态顺序成立，不表示已经渲染或可以发布。
 
-## 安装 Skill
+## 一键安装 Skill
 
 克隆或下载仓库后，在仓库根目录运行：
 
@@ -73,7 +81,32 @@ durationMs=72000 release=local_package
 ./install.sh
 ```
 
-安装脚本不会覆盖已有同名 Skill；如果目标目录已经存在，会停止并提示你先备份旧版本。
+默认会安装到 Codex、Claude Code、Cursor、OpenCode 和 Windsurf 的用户级 Skill 目录。如果只使用某一个 Agent：
+
+```bash
+./install.sh --target codex
+./install.sh --target claude
+./install.sh --target cursor
+./install.sh --target opencode
+./install.sh --target windsurf
+```
+
+TRAE 目前使用官方已公开的项目兼容目录；团队仓库也推荐用这种方式：
+
+```bash
+./install.sh --target all --scope project --project-dir /path/to/your-project
+```
+
+| 工具 | 用户级安装 | 项目级共享 |
+| --- | --- | --- |
+| Codex | `~/.agents/skills` | `.agents/skills` |
+| Claude Code | `~/.claude/skills` | `.claude/skills` |
+| Cursor | `~/.cursor/skills` | `.agents/skills` |
+| OpenCode | `~/.config/opencode/skills` | `.agents/skills` |
+| Windsurf | `~/.codeium/windsurf/skills` | `.agents/skills` |
+| TRAE | 使用项目级路径 | `.agents/skills` |
+
+安装脚本不会覆盖已有同名 Skill；已有目录会被安全跳过。这个 Skill 遵循通用 `SKILL.md` 结构，各 Agent 可以自动匹配任务，也可以显式调用。
 
 重新启动或刷新 Agent 后，可以直接说：
 
@@ -114,3 +147,7 @@ Skill 会先把已确认口播翻译成语义场景、字幕与时间轴，再�
 ## 状态边界
 
 测试通过只证明当前版本的本地合同、失败路径和隐私门禁成立，不等于已经发布到 npm 或任何内容平台，也不代表使用者生成的视频已经通过人工审核。声音与隐私问题请先读 [SECURITY.md](SECURITY.md)。
+
+## 开源协议
+
+本项目采用 [MIT License](LICENSE)。你可以使用、修改、分发和集成到自己的项目中，但需保留版权和许可声明。声音参考、模型权重和你自己接入的第三方素材，仍需分别遵守它们各自的授权与许可。

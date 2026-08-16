@@ -78,10 +78,47 @@ test('the public voice starter is disabled', async () => {
 test('the repository includes a non-overwriting installer', async () => {
   await access(path.join(root, 'install.sh'));
   const installer = await readFile(path.join(root, 'install.sh'), 'utf8');
-  assert.match(installer, /TARGET_DIR/);
+  assert.match(installer, /target_dir/);
   assert.match(installer, /already|已存在/);
   assert.equal(installer.includes('rm -rf'), false);
   assert.equal(installer.includes('curl |'), false);
+});
+
+test('the installer supports one-command user installation across five agents', async () => {
+  const temporaryHome = await mkdtemp(path.join(tmpdir(), 'ai-video-maker-install-home-'));
+  const result = spawnSync('sh', [path.join(root, 'install.sh')], {
+    cwd: root,
+    env: {...process.env, HOME: temporaryHome},
+    encoding: 'utf8',
+  });
+  assert.equal(result.status, 0, result.stderr || result.stdout);
+  const expected = [
+    '.agents/skills/make-ai-video/SKILL.md',
+    '.claude/skills/make-ai-video/SKILL.md',
+    '.cursor/skills/make-ai-video/SKILL.md',
+    '.config/opencode/skills/make-ai-video/SKILL.md',
+    '.codeium/windsurf/skills/make-ai-video/SKILL.md',
+  ];
+  for (const relative of expected) await access(path.join(temporaryHome, relative));
+
+  const second = spawnSync('sh', [path.join(root, 'install.sh')], {
+    cwd: root,
+    env: {...process.env, HOME: temporaryHome},
+    encoding: 'utf8',
+  });
+  assert.equal(second.status, 0, second.stderr || second.stdout);
+  assert.match(second.stdout, /不会覆盖/);
+});
+
+test('the installer supports shared project installation including TRAE', async () => {
+  const project = await mkdtemp(path.join(tmpdir(), 'ai-video-maker-install-project-'));
+  const result = spawnSync('sh', [path.join(root, 'install.sh'), '--target', 'all', '--scope', 'project', '--project-dir', project], {
+    cwd: root,
+    encoding: 'utf8',
+  });
+  assert.equal(result.status, 0, result.stderr || result.stdout);
+  await access(path.join(project, '.agents', 'skills', 'make-ai-video', 'SKILL.md'));
+  await access(path.join(project, '.claude', 'skills', 'make-ai-video', 'SKILL.md'));
 });
 
 const walk = async (directory) => {

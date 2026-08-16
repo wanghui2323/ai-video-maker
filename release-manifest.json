@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "name": "ai-video-maker",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "artifactState": "local-open-source-candidate",
   "publicAssetsIncluded": false,
   "files": [
@@ -11,7 +11,7 @@
     },
     {
       "path": "install.sh",
-      "sha256": "7fd0574e8a67ffdb9a7368f71e58e8b54ea157a65991441b717b8f8f714a2a55"
+      "sha256": "fd19b2b80e19e435780873cc63b3a2317f3705f88bd342946e2ce55d5f9c15bf"
     },
     {
       "path": "LICENSE",
@@ -127,11 +127,11 @@
     },
     {
       "path": "package.json",
-      "sha256": "9f131b17b80c7407da912a0ca13141ad32e176c5a3309380faaf033aaa7c0e4c"
+      "sha256": "2e99594742c53c426623a9b366166dc866f12071f83758fbdbf4774f1e5ca44d"
     },
     {
       "path": "README.md",
-      "sha256": "642b9001ca6c2382e0a4abd438a1732b01521f8959a2133c2b2fedac0293c2d1"
+      "sha256": "081b1a36d56b49c1f6be6dd2cd39d8f9854dfb9ceff836d5955f19866217326f"
     },
     {
       "path": "SECURITY.md",
@@ -139,7 +139,7 @@
     },
     {
       "path": "test/release.test.mjs",
-      "sha256": "94ebba9b69fa66145d24f27f1afb35f5a2b8d0431c374913c364c201efbf0550"
+      "sha256": "c831a4078f6d30d595ea6e94a2516c92aa53efae00d357f7e97db47c8bbc3d34"
     }
   ]
 }

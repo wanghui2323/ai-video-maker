@@ -1,6 +1,6 @@
 {
   "name": "ai-video-maker-skill",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
   "description": "Chinese AI video maker Skill with multi-input planning, review gates, and optional local voice cloning",
