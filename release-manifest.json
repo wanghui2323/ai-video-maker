@@ -19,7 +19,7 @@
     },
     {
       "path": "make-ai-video/agents/openai.yaml",
-      "sha256": "f5beec6ac3dd6fc2d948240767686a7c49e18a5369d792834d85d5333e81cb3b"
+      "sha256": "7786222092dd05da27be4d207b192877c09961b40748fff4443ca3fe7dab48bd"
     },
     {
       "path": "make-ai-video/assets/example-package/captions.json",
@@ -91,7 +91,7 @@
     },
     {
       "path": "make-ai-video/references/voice-cloning.md",
-      "sha256": "07559c1b40036b464d8486753b8b83850034d57a46cd39b5445cc6851305a2bb"
+      "sha256": "ab78ad413a789fa8864e775f515b6da083ac3e5632cd6de6070de9484268e47b"
     },
     {
       "path": "make-ai-video/requirements-voice-mlx.txt",
@@ -123,7 +123,7 @@
     },
     {
       "path": "make-ai-video/SKILL.md",
-      "sha256": "3ceeb2c24b49545ae01452eb0f4560e1fa05ef6f9d1d8ffb21e8f985a6646f40"
+      "sha256": "8e34f4457cc756038f808afaec87ab5910db7f496db9531af932689c4c095144"
     },
     {
       "path": "package.json",
@@ -131,7 +131,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "081b1a36d56b49c1f6be6dd2cd39d8f9854dfb9ceff836d5955f19866217326f"
+      "sha256": "542e5be035bd735f1aae90ec3fcb6c9b48672642a01619af4eeeaa4c25945e97"
     },
     {
       "path": "SECURITY.md",

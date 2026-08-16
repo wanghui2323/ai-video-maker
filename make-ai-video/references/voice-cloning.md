@@ -47,14 +47,28 @@ Profile preflight
 - <https://huggingface.co/mlx-community/Qwen3-TTS-12Hz-0.6B-Base-bf16>
 - <https://github.com/ml-explore/mlx-examples/tree/main/whisper>
 
+### 启动后的设备与模型准备
+
+用户明确选择克隆本人或已获授权的声音后，由 Agent 主动检查 Apple Silicon、Python 3.12、磁盘空间、生产包 `private/` 忽略规则和已有模型快照。不要只把以下命令展示给用户；应在当前项目范围内执行，遇到网络、依赖安装或大文件下载审批时发起批准，批准后继续。
+
 在 Skill 目录创建隔离环境：
 
 ```bash
 python3.12 -m venv .venv-voice
 .venv-voice/bin/pip install -r requirements-voice-mlx.txt
+.venv-voice/bin/pip install "huggingface_hub[hf_xet]"
 ```
 
-把模型放到生产包已忽略的 `models/`。Provider 强制离线运行，不在推理时下载模型。可先干跑合同：
+把模型下载到生产包已忽略的 `models/`；如果目标目录已存在，先检查模型来源与关键文件，不要无条件覆盖：
+
+```bash
+.venv-voice/bin/hf download mlx-community/Qwen3-TTS-12Hz-0.6B-Base-bf16 \
+  --local-dir <生产包>/models/Qwen3-TTS-12Hz-0.6B-Base-bf16
+.venv-voice/bin/hf download mlx-community/whisper-small-mlx \
+  --local-dir <生产包>/models/whisper-small-mlx
+```
+
+下载后检查 `voice-provider.json` 中的 `modelId`、`modelPath`、运行时版本和 `fingerprintFiles`，确认来源与本地路径后才能把 `confirmed` 改为 `true`。Profile 初始化会把关键文件 SHA-256 锁进声音档案。Provider 强制离线运行，不在推理时下载模型。可先干跑合同：
 
 ```bash
 python scripts/providers/qwen3-tts-mlx.py \
@@ -114,6 +128,8 @@ node scripts/voice-profile.mjs accept \
   --feedback "接受为本地 production-pilot 基线" \
   --output private/voice-profile-1.0.0.json
 ```
+
+校准完成后不要停在“声音建档成功”。把通过的 Profile 路径、版本和哈希写回当前生产状态，并自动回到视频工作流：内容选择 → 口播确认 → 本次三候选 VoiceRun → 本人选声 → 正式时序 → 画面与 QA。
 
 ## 本次视频绑定
 
